@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-09-04T12:25:49.956Z",
+  "testRun": {
+    "total": 2,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "duration": 0
+  },
+  "browser": "chromium",
+  "environment": "test"
+}

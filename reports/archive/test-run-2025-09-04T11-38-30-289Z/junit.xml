@@ -1,0 +1,11 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="15.712628">
+<testsuite name="change-logo.spec.ts" timestamp="2025-09-04T11:31:51.569Z" hostname="chromium" tests="1" failures="0" skipped="0" time="12.291" errors="0">
+<testcase name="Add Shed › should add a shed" classname="change-logo.spec.ts" time="12.291">
+<system-out>
+<![CDATA[16:31:53 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:31:55 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
