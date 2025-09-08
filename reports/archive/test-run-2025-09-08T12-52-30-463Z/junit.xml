@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="56.465205999999995">
+<testsuite name="add-shed.spec.ts" timestamp="2025-09-08T12:48:33.489Z" hostname="chromium" tests="1" failures="0" skipped="0" time="48.145" errors="0">
+<testcase name="Add Shed › should add a shed" classname="add-shed.spec.ts" time="48.145">
+</testcase>
+</testsuite>
+</testsuites>
