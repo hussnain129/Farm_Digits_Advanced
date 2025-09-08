@@ -124,7 +124,8 @@ export class CommonUtils {
    */
   async waitForPageLoad(): Promise<void> {
     this.logger.logStep('Waiting for page to load');
-    await this.page.waitForLoadState('networkidle');
+    // Use 'domcontentloaded' to avoid hanging on apps with persistent network activity
+    await this.page.waitForLoadState('domcontentloaded');
   }
 
   /**
@@ -203,12 +204,11 @@ export class CommonUtils {
   async waitForElementCount(selector: string, count: number, timeout: number = 10000): Promise<void> {
     this.logger.logElementInteraction('waitForElementCount', selector, count.toString());
     await this.page.waitForFunction(
-      (selector, expectedCount) => {
-        return document.querySelectorAll(selector).length === expectedCount;
+      (args: { selector: string; expectedCount: number }) => {
+        return document.querySelectorAll(args.selector).length === args.expectedCount;
       },
-      selector,
-      count,
-      {timeout: timeout }
+      { selector, expectedCount: count },
+      { timeout }
     );
   }
 

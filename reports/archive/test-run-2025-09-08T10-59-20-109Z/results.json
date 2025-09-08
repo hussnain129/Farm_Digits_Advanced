@@ -1,0 +1,493 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\playwright.config.ts",
+    "rootDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/current/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/current/junit.xml"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/reports/current/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "add-animal.spec.ts",
+      "file": "add-animal.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Animal",
+          "file": "add-animal.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should open add animal form",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 22128,
+                      "error": {
+                        "message": "Error: expect.toBeVisible: Error: strict mode violation: getByText('Add Animal') resolved to 2 elements:\n    1) <span>Add Animal</span> aka getByLabel('Animals').locator('button').filter({ hasText: 'Add Animal' })\n    2) <button type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2\">Add Animal</button> aka getByRole('button', { name: 'Add Animal' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Add Animal')\u001b[22m\n",
+                        "stack": "Error: expect.toBeVisible: Error: strict mode violation: getByText('Add Animal') resolved to 2 elements:\n    1) <span>Add Animal</span> aka getByLabel('Animals').locator('button').filter({ hasText: 'Add Animal' })\n    2) <button type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2\">Add Animal</button> aka getByRole('button', { name: 'Add Animal' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Add Animal')\u001b[22m\n\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-animal.spec.ts:17:52",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-animal.spec.ts",
+                          "column": 52,
+                          "line": 17
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mconst\u001b[39m addAnimal \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAddAnimalPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m addAnimal\u001b[33m.\u001b[39mopenAddAnimalForm()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Add Animal'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-animal.spec.ts",
+                            "column": 52,
+                            "line": 17
+                          },
+                          "message": "Error: expect.toBeVisible: Error: strict mode violation: getByText('Add Animal') resolved to 2 elements:\n    1) <span>Add Animal</span> aka getByLabel('Animals').locator('button').filter({ hasText: 'Add Animal' })\n    2) <button type=\"submit\" class=\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2\">Add Animal</button> aka getByRole('button', { name: 'Add Animal' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Add Animal')\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mconst\u001b[39m addAnimal \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAddAnimalPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m addAnimal\u001b[33m.\u001b[39mopenAddAnimalForm()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Add Animal'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-animal.spec.ts:17:52\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "15:51:49 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:51:51 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:51:44.985Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-animal-Add-Animal-should-open-add-animal-form-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-animal-Add-Animal-should-open-add-animal-form-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-animal-Add-Animal-should-open-add-animal-form-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-animal.spec.ts",
+                        "column": 52,
+                        "line": 17
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "255a6680a276d410a6ef-1c22e149ba0500f236d3",
+              "file": "add-animal.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "add-doctor.spec.ts",
+      "file": "add-doctor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Doctor",
+          "file": "add-doctor.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a doctor",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 24254,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText('Wiegand, Anderson and Greenfelder')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Wiegand, Anderson and Greenfelder')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText('Wiegand, Anderson and Greenfelder')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Wiegand, Anderson and Greenfelder')\u001b[22m\n\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:17:56",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts",
+                          "column": 56,
+                          "line": 17
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mconst\u001b[39m addDoctor \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAddDoctorPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m addDoctor\u001b[33m.\u001b[39mopenAndSubmitDoctorForm(doctorsData\u001b[33m.\u001b[39mname\u001b[33m,\u001b[39m doctorsData\u001b[33m.\u001b[39maddress\u001b[33m,\u001b[39m doctorsData\u001b[33m.\u001b[39mphone\u001b[33m,\u001b[39m doctorsData\u001b[33m.\u001b[39mdescription)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(doctorsData\u001b[33m.\u001b[39mname))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts",
+                            "column": 56,
+                            "line": 17
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByText('Wiegand, Anderson and Greenfelder')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Wiegand, Anderson and Greenfelder')\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m         \u001b[36mconst\u001b[39m addDoctor \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAddDoctorPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m         \u001b[36mawait\u001b[39m addDoctor\u001b[33m.\u001b[39mopenAndSubmitDoctorForm(doctorsData\u001b[33m.\u001b[39mname\u001b[33m,\u001b[39m doctorsData\u001b[33m.\u001b[39maddress\u001b[33m,\u001b[39m doctorsData\u001b[33m.\u001b[39mphone\u001b[33m,\u001b[39m doctorsData\u001b[33m.\u001b[39mdescription)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(doctorsData\u001b[33m.\u001b[39mname))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:17:56\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "15:51:49 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:51:50 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:51:45.037Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Add-Doctor-should-add-a-doctor-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Add-Doctor-should-add-a-doctor-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Add-Doctor-should-add-a-doctor-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts",
+                        "column": 56,
+                        "line": 17
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-e93b8ee05b5bfa61c1be",
+              "file": "add-doctor.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "add-shed.spec.ts",
+      "file": "add-shed.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Shed",
+          "file": "add-shed.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a shed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 23019,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:51:49 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:51:50 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:51:44.978Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "21a331257f17531f9ba4-60d46fee37ac2de5c71c",
+              "file": "add-shed.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "change-logo.spec.ts",
+      "file": "change-logo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "General Settings",
+          "file": "change-logo.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should upload logo and save settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 22093,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:51:45 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:51:51 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:51:44.956Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a72e9a211689064e01c-e5d7192035f98a169593",
+              "file": "change-logo.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login",
+          "file": "login.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login successfully with standard user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11782,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:52:07 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:52:10 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:52:07.377Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-8831f8f574fd81c1fb13",
+              "file": "login.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "should show error on invalid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10147,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:52:11 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:52:14 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:52:10.912Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-c0f021b0d2910236f20e",
+              "file": "login.spec.ts",
+              "line": 14,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-08T10:51:31.842Z",
+    "duration": 50144.918,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

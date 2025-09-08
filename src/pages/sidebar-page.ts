@@ -5,6 +5,7 @@ export class SidebarPage {
     private utils: CommonUtils;
     private LivestockManagement = '//span[text()="Livestock Management"]';
     private Animals = '//div[text()="Animals"]';
+    private HealthAndVaccinations = '//div[text()="Health & Vaccination"]';
     private ShedTab = 'button[role="tab"]:has-text("Sheds")';
     private AnimalTab = 'button[role="tab"]:has-text("Animals")';
     private settingsLink = 'button:has-text("Settings")';
@@ -19,6 +20,9 @@ export class SidebarPage {
     async clickAnimals() {
         await this.utils.clickElement(this.Animals);
     }
+    async clickHealthAndVaccination(){
+        await this.utils.clickElement(this.HealthAndVaccinations);
+    }
     async clickShed() {
         await this.utils.clickElement(this.ShedTab);
     }
@@ -31,6 +35,10 @@ export class SidebarPage {
     async clickGeneralSettings() {
         await this.utils.clickElement(this.generalSettingsLink);
 
+    }
+    async openHealthAndVaccinationPage(){
+        await this.clickLivestockManagement();
+        await this.clickHealthAndVaccination();
     }  
     async openGeneralSettings() {
         await this.clickSettings();

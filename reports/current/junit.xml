@@ -1,11 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="18.182629000000002">
-<testsuite name="add-shed.spec.ts" timestamp="2025-09-04T12:25:32.580Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.33" errors="0">
-<testcase name="Add Shed › should add a shed" classname="add-shed.spec.ts" time="14.33">
-<system-out>
-<![CDATA[17:25:34 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
-17:25:36 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
-]]>
-</system-out>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="21.924236999999998">
+<testsuite name="add-shed.spec.ts" timestamp="2025-09-08T12:36:20.514Z" hostname="chromium" tests="1" failures="0" skipped="0" time="12.179" errors="0">
+<testcase name="Add Shed › should add a shed" classname="add-shed.spec.ts" time="12.179">
 </testcase>
 </testsuite>
 </testsuites>

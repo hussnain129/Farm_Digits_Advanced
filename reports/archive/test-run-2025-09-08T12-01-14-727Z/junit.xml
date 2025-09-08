@@ -1,0 +1,61 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="45.440062000000005">
+<testsuite name="add-shed.spec.ts" timestamp="2025-09-08T11:54:53.582Z" hostname="chromium" tests="1" failures="1" skipped="0" time="34.772" errors="0">
+<testcase name="Add Shed › should add a shed" classname="add-shed.spec.ts" time="34.772">
+<failure message="add-shed.spec.ts:8:9 should add a shed" type="FAILURE">
+<![CDATA[  [chromium] › add-shed.spec.ts:8:9 › Add Shed › should add a shed ─────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('//span[text()="Livestock Management"]') to be visible
+
+
+       at ..\src\utils\common-utils.ts:23
+
+      21 |     this.logger.logElementInteraction('waitForElement', selector);
+      22 |     const element = this.page.locator(selector);
+    > 23 |     await element.waitFor({ state: 'visible', timeout });
+         |                   ^
+      24 |     return element;
+      25 |   }
+      26 |
+        at CommonUtils.waitForElement (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\utils\common-utils.ts:23:19)
+        at CommonUtils.clickElement (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\utils\common-utils.ts:35:36)
+        at SidebarPage.clickLivestockManagement (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\sidebar-page.ts:18:9)
+        at SidebarPage.openShedTable (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\sidebar-page.ts:53:9)
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-shed.spec.ts:11:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[16:55:07 [[33mwarn[39m] [CommonUtils]: Click attempt 1 failed, retrying... {
+  "selector": "//span[text()=\"Livestock Management\"]",
+  "error": {
+    "name": "TimeoutError"
+  }
+}
+16:55:18 [[33mwarn[39m] [CommonUtils]: Click attempt 2 failed, retrying... {
+  "selector": "//span[text()=\"Livestock Management\"]",
+  "error": {
+    "name": "TimeoutError"
+  }
+}
+
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

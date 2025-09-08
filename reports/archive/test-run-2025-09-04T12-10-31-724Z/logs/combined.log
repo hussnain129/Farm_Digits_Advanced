@@ -1,6 +1,0 @@
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-04 16:48:39"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-04 16:48:41"}
-{"context":"GlobalTeardown","level":"info","message":"Starting global teardown...","timestamp":"2025-09-04 16:48:48"}
-{"context":"ReportManager","level":"info","message":"Generated test summary report","timestamp":"2025-09-04 16:48:48"}
-{"archivedReports":4,"context":"GlobalTeardown","currentReports":2,"lastArchiveDate":"test-run-2025-09-04T11-48-37-320Z","level":"info","message":"Report statistics:","timestamp":"2025-09-04 16:48:48","totalArchives":10}
-{"context":"GlobalTeardown","level":"info","message":"Global teardown completed successfully","timestamp":"2025-09-04 16:48:48"}

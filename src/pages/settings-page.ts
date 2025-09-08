@@ -13,7 +13,7 @@ export class SettingPage {
     }
     async uploadLogoAndSave(filePath: string) {
         const resolvedPath = path.resolve(filePath);
-        await this.page.setInputFiles(this.waitingSelector, resolvedPath);
+        await this.page.setInputFiles(this.uploadLogoSelector, resolvedPath);
         await this.waitForData();
         await this.clickSaveButton();
     }
@@ -24,6 +24,6 @@ export class SettingPage {
         await this.utils.clickElement(this.saveButton);
     }
     async waitForData() {
-        await expect(this.page.locator('input[name="name"]')).not.toHaveValue('');
+        await expect(this.page.locator(this.waitingSelector)).not.toHaveValue('');
     }
 }

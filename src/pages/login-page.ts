@@ -18,8 +18,8 @@ export class LoginPage {
   }
 
   async clickLoginButton(baseUrl: string, username: string, password: string) {
+    // Ensure we are on the login page before interacting
     await this.utils.navigateTo(baseUrl);
-    await this.utils.clickElement(this.loginClick);
     await this.utils.fillInput(this.usernameInput, username);
     await this.utils.fillInput(this.passwordInput, password);
     await this.utils.clickElement(this.rememberMeCheckbox);

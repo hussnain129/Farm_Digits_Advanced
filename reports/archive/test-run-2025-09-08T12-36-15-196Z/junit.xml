@@ -1,0 +1,43 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="28.191802">
+<testsuite name="add-shed.spec.ts" timestamp="2025-09-08T12:35:42.173Z" hostname="chromium" tests="1" failures="1" skipped="0" time="18.621" errors="0">
+<testcase name="Add Shed › should add a shed" classname="add-shed.spec.ts" time="18.621">
+<failure message="add-shed.spec.ts:8:9 should add a shed" type="FAILURE">
+<![CDATA[  [chromium] › add-shed.spec.ts:8:9 › Add Shed › should add a shed ─────────────────────────────────
+
+    TimeoutError: page.waitForSelector: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('//span[text()="Livestock Management"]') to be visible
+
+
+       8 |     test('should add a shed', async ({ page }) => {
+       9 |         await page.goto('/');
+    > 10 |         await page.waitForSelector('//span[text()="Livestock Management"]', { timeout: 15000 });
+         |                    ^
+      11 |
+      12 |         const sidebarPage = new SidebarPage(page);
+      13 |         await sidebarPage.openShedTable();
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-shed.spec.ts:10:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

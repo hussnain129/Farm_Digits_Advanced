@@ -18,8 +18,16 @@ export const testUsers = {
     },
   }; 
  
-export const testSheds = {
-  name: faker.company.name(),           // e.g. "Smith LLC"
-  description: faker.lorem.sentence(),  // e.g. "Innovative shed for modern use."
+export const shedsData = {
+  name: faker.company.name(),           
+  description: faker.lorem.sentence(),  
   capacity: faker.number.int({ min: 50, max: 500 })
+};
+
+export const doctorsData = {
+  name: faker.company.name(),
+  address: faker.lorem.sentence(),
+  phone: faker.phone.number({ style: 'international' }),           
+  description: faker.lorem.sentence(),  
+
 };

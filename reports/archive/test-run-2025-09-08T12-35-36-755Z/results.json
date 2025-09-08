@@ -1,0 +1,88 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\playwright.config.ts",
+    "rootDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/current/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/current/junit.xml"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/reports/current/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "TimeoutError: page.waitForLoadState: Timeout 30000ms exceeded.",
+      "stack": "TimeoutError: page.waitForLoadState: Timeout 30000ms exceeded.\n    at CommonUtils.waitForPageLoad (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:127:21)\n    at CommonUtils.navigateTo (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:294:16)\n    at LoginPage.clickLoginButton (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\login-page.ts:22:5)\n    at globalSetup (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-setup.ts:28:5)",
+      "location": {
+        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+        "column": 21,
+        "line": 127
+      },
+      "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:127\n\n\u001b[0m \u001b[90m 125 |\u001b[39m   \u001b[36masync\u001b[39m waitForPageLoad()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 126 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogStep(\u001b[32m'Waiting for page to load'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 127 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 128 |\u001b[39m   }\n \u001b[90m 129 |\u001b[39m\n \u001b[90m 130 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m"
+    }
+  ],
+  "stats": {
+    "startTime": "2025-09-08T12:33:42.019Z",
+    "duration": 32832.036,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -70,15 +70,15 @@
   },
   "suites": [
     {
-      "title": "add-shed.spec.ts",
-      "file": "add-shed.spec.ts",
+      "title": "add-doctor.spec.ts",
+      "file": "add-doctor.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Add Shed",
-          "file": "add-shed.spec.ts",
+          "file": "add-doctor.spec.ts",
           "line": 7,
           "column": 6,
           "specs": [
@@ -98,12 +98,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12179,
+                      "duration": 29825,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "16:03:51 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:03:54 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-08T12:36:22.315Z",
+                      "startTime": "2025-09-08T11:03:50.699Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -111,8 +118,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "21a331257f17531f9ba4-60d46fee37ac2de5c71c",
-              "file": "add-shed.spec.ts",
+              "id": "5952d9ea3e1e5a2c886a-d00a714a755e1273cabb",
+              "file": "add-doctor.spec.ts",
               "line": 8,
               "column": 9
             }
@@ -123,8 +130,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-08T12:36:14.593Z",
-    "duration": 21924.236999999997,
+    "startTime": "2025-09-08T11:03:48.559Z",
+    "duration": 33444.272000000004,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

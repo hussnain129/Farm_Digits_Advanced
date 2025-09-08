@@ -1,0 +1,518 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\playwright.config.ts",
+    "rootDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/current/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/current/junit.xml"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/reports/current/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "add-animal.spec.ts",
+      "file": "add-animal.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Animal",
+          "file": "add-animal.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should open add animal form",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 37751,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n\n    at CommonUtils.waitForElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:23:19)\n    at CommonUtils.clickElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:35:36)\n    at SidebarPage.clickLivestockManagement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:18:9)\n    at SidebarPage.openAnimalTable (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:48:9)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-animal.spec.ts:11:9",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                          "column": 19,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:23\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogElementInteraction(\u001b[32m'waitForElement'\u001b[39m\u001b[33m,\u001b[39m selector)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   }\n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                            "column": 19,
+                            "line": 23
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:23\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogElementInteraction(\u001b[32m'waitForElement'\u001b[39m\u001b[33m,\u001b[39m selector)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   }\n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at CommonUtils.waitForElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:23:19)\u001b[22m\n\u001b[2m    at CommonUtils.clickElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:35:36)\u001b[22m\n\u001b[2m    at SidebarPage.clickLivestockManagement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:18:9)\u001b[22m\n\u001b[2m    at SidebarPage.openAnimalTable (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:48:9)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-animal.spec.ts:11:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "15:42:52 [\u001b[33mwarn\u001b[39m] [CommonUtils]: Click attempt 1 failed, retrying... {\n  \"selector\": \"//span[text()=\\\"Livestock Management\\\"]\",\n  \"error\": {\n    \"name\": \"TimeoutError\"\n  }\n}\r\n"
+                        },
+                        {
+                          "text": "15:43:04 [\u001b[33mwarn\u001b[39m] [CommonUtils]: Click attempt 2 failed, retrying... {\n  \"selector\": \"//span[text()=\\\"Livestock Management\\\"]\",\n  \"error\": {\n    \"name\": \"TimeoutError\"\n  }\n}\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:42:42.584Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-animal-Add-Animal-should-open-add-animal-form-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-animal-Add-Animal-should-open-add-animal-form-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                        "column": 19,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "255a6680a276d410a6ef-1c22e149ba0500f236d3",
+              "file": "add-animal.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "add-doctor.spec.ts",
+      "file": "add-doctor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Doctor",
+          "file": "add-doctor.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a doctor",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 38021,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n\n    at CommonUtils.waitForElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:23:19)\n    at CommonUtils.clickElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:35:36)\n    at SidebarPage.clickLivestockManagement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:18:9)\n    at SidebarPage.openHealthAndVaccinationPage (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:40:9)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:11:9",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                          "column": 19,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:23\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogElementInteraction(\u001b[32m'waitForElement'\u001b[39m\u001b[33m,\u001b[39m selector)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   }\n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                            "column": 19,
+                            "line": 23
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:23\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogElementInteraction(\u001b[32m'waitForElement'\u001b[39m\u001b[33m,\u001b[39m selector)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   }\n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at CommonUtils.waitForElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:23:19)\u001b[22m\n\u001b[2m    at CommonUtils.clickElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:35:36)\u001b[22m\n\u001b[2m    at SidebarPage.clickLivestockManagement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:18:9)\u001b[22m\n\u001b[2m    at SidebarPage.openHealthAndVaccinationPage (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:40:9)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:11:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "15:42:53 [\u001b[33mwarn\u001b[39m] [CommonUtils]: Click attempt 1 failed, retrying... {\n  \"selector\": \"//span[text()=\\\"Livestock Management\\\"]\",\n  \"error\": {\n    \"name\": \"TimeoutError\"\n  }\n}\r\n"
+                        },
+                        {
+                          "text": "15:43:04 [\u001b[33mwarn\u001b[39m] [CommonUtils]: Click attempt 2 failed, retrying... {\n  \"selector\": \"//span[text()=\\\"Livestock Management\\\"]\",\n  \"error\": {\n    \"name\": \"TimeoutError\"\n  }\n}\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:42:43.242Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Add-Doctor-should-add-a-doctor-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Add-Doctor-should-add-a-doctor-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                        "column": 19,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-e93b8ee05b5bfa61c1be",
+              "file": "add-doctor.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "add-shed.spec.ts",
+      "file": "add-shed.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Shed",
+          "file": "add-shed.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a shed",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 37959,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n\n    at CommonUtils.waitForElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:23:19)\n    at CommonUtils.clickElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:35:36)\n    at SidebarPage.clickLivestockManagement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:18:9)\n    at SidebarPage.openShedTable (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:53:9)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-shed.spec.ts:11:9",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                          "column": 19,
+                          "line": 23
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:23\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogElementInteraction(\u001b[32m'waitForElement'\u001b[39m\u001b[33m,\u001b[39m selector)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   }\n \u001b[90m 26 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                            "column": 19,
+                            "line": 23
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[text()=\"Livestock Management\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:23\n\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogElementInteraction(\u001b[32m'waitForElement'\u001b[39m\u001b[33m,\u001b[39m selector)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m   }\n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at CommonUtils.waitForElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:23:19)\u001b[22m\n\u001b[2m    at CommonUtils.clickElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:35:36)\u001b[22m\n\u001b[2m    at SidebarPage.clickLivestockManagement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:18:9)\u001b[22m\n\u001b[2m    at SidebarPage.openShedTable (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\sidebar-page.ts:53:9)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-shed.spec.ts:11:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "15:42:53 [\u001b[33mwarn\u001b[39m] [CommonUtils]: Click attempt 1 failed, retrying... {\n  \"selector\": \"//span[text()=\\\"Livestock Management\\\"]\",\n  \"error\": {\n    \"name\": \"TimeoutError\"\n  }\n}\r\n"
+                        },
+                        {
+                          "text": "15:43:04 [\u001b[33mwarn\u001b[39m] [CommonUtils]: Click attempt 2 failed, retrying... {\n  \"selector\": \"//span[text()=\\\"Livestock Management\\\"]\",\n  \"error\": {\n    \"name\": \"TimeoutError\"\n  }\n}\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:42:43.131Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-shed-Add-Shed-should-add-a-shed-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-shed-Add-Shed-should-add-a-shed-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                        "column": 19,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "21a331257f17531f9ba4-60d46fee37ac2de5c71c",
+              "file": "add-shed.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "change-logo.spec.ts",
+      "file": "change-logo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "General Settings",
+          "file": "change-logo.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should upload logo and save settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 9027,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:42:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:42:45 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:42:43.128Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a72e9a211689064e01c-e5d7192035f98a169593",
+              "file": "change-logo.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login",
+          "file": "login.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login successfully with standard user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6546,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:42:52 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:42:54 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:42:52.406Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-8831f8f574fd81c1fb13",
+              "file": "login.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "should show error on invalid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6828,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:42:59 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:43:01 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-08T10:42:58.970Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-c0f021b0d2910236f20e",
+              "file": "login.spec.ts",
+              "line": 14,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-08T10:42:33.681Z",
+    "duration": 48364.909,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
