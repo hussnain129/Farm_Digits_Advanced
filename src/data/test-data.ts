@@ -33,6 +33,6 @@ export const doctorsData = {
 };
 
 export const searchData = {
-  name: 'Ivory',
+  name: 'Dolan',
   expectedCount: 1
 };

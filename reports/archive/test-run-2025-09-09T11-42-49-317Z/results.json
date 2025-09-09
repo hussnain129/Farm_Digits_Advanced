@@ -70,20 +70,20 @@
   },
   "suites": [
     {
-      "title": "search-doctor.spec.ts",
-      "file": "search-doctor.spec.ts",
+      "title": "add-shed.spec.ts",
+      "file": "add-shed.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Veterinarian Directory Search",
-          "file": "search-doctor.spec.ts",
-          "line": 5,
+          "title": "Add Shed",
+          "file": "add-shed.spec.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "should filter table results by search term",
+              "title": "should add a shed",
               "ok": true,
               "tags": [],
               "tests": [
@@ -98,12 +98,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 206464,
+                      "duration": 11066,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "16:38:26 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:38:28 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-09T05:50:06.525Z",
+                      "startTime": "2025-09-09T11:38:25.823Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -111,10 +118,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "53ae03ad609a29e09a6f-ff9d7d4476af50cecc00",
-              "file": "search-doctor.spec.ts",
-              "line": 6,
-              "column": 7
+              "id": "21a331257f17531f9ba4-60d46fee37ac2de5c71c",
+              "file": "add-shed.spec.ts",
+              "line": 8,
+              "column": 9
             }
           ]
         }
@@ -123,8 +130,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-09T05:49:59.797Z",
-    "duration": 214447.295,
+    "startTime": "2025-09-09T11:38:23.988Z",
+    "duration": 14198.73,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

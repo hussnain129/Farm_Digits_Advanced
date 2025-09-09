@@ -1,11 +1,15 @@
 import { test, expect, Page, Locator } from '@playwright/test';
+import { LoginPage } from '../src/pages/login-page';
 import { SidebarPage } from '../src/pages/sidebar-page';
 import { HealthAndVaccinationsPage } from '../src/pages/Health&Vaccinations';
-import { doctorsData, searchData } from '../src/data/test-data';
+import { testUsers,doctorsData, searchData } from '../src/data/test-data';
+
+const BASE_URL = process.env.BASE_URL || 'https://farmdigits.outscalers.com/';
 
 test.describe('Veterinarian Directory', () => {
     test.beforeEach(async ({ page }) => {
-        await page.goto('/dashboard');
+        const login = new LoginPage(page);
+        await login.clickLoginButton(BASE_URL, testUsers.standard.username, testUsers.standard.password);
         const sidebarPage = new SidebarPage(page);
         await sidebarPage.openHealthAndVaccinationPage();
     });

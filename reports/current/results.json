@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -49,7 +49,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -70,20 +70,20 @@
   },
   "suites": [
     {
-      "title": "add-doctor.spec.ts",
-      "file": "add-doctor.spec.ts",
+      "title": "change-logo.spec.ts",
+      "file": "change-logo.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Veterinarian Directory",
-          "file": "add-doctor.spec.ts",
-          "line": 6,
+          "title": "General Settings",
+          "file": "change-logo.spec.ts",
+          "line": 10,
           "column": 6,
           "specs": [
             {
-              "title": "should add a doctor",
+              "title": "should upload logo and save settings",
               "ok": true,
               "tags": [],
               "tests": [
@@ -98,50 +98,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9032,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-09-09T07:41:35.216Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5952d9ea3e1e5a2c886a-0d5f99d55dea8105c8d2",
-              "file": "add-doctor.spec.ts",
-              "line": 13,
-              "column": 9
-            },
-            {
-              "title": "should filter table results by search term",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 8602,
+                      "duration": 7371,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "12:41:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                          "text": "16:47:53 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:47:55 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-09T07:41:35.299Z",
+                      "startTime": "2025-09-09T11:47:52.767Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -149,57 +118,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "5952d9ea3e1e5a2c886a-0ed041d60ada4a09d6a5",
-              "file": "add-doctor.spec.ts",
-              "line": 23,
-              "column": 9
-            },
-            {
-              "title": "should delete searched veterinarian",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 9780,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "12:41:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
-                        },
-                        {
-                          "text": "12:41:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: getRowByName {\n  \"0\": \"I\",\n  \"1\": \"v\",\n  \"2\": \"o\",\n  \"3\": \"r\",\n  \"4\": \"y\"\n}\r\n"
-                        },
-                        {
-                          "text": "12:41:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: confirmAction {\n  \"0\": \"D\",\n  \"1\": \"e\",\n  \"2\": \"l\",\n  \"3\": \"e\",\n  \"4\": \"t\",\n  \"5\": \"e\"\n}\r\n"
-                        },
-                        {
-                          "text": "12:41:44 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: getRowByName {\n  \"0\": \"I\",\n  \"1\": \"v\",\n  \"2\": \"o\",\n  \"3\": \"r\",\n  \"4\": \"y\"\n}\r\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-09-09T07:41:35.223Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5952d9ea3e1e5a2c886a-befbc25b27e1bab74708",
-              "file": "add-doctor.spec.ts",
-              "line": 30,
-              "column": 9
+              "id": "3a72e9a211689064e01c-e5d7192035f98a169593",
+              "file": "change-logo.spec.ts",
+              "line": 11,
+              "column": 7
             }
           ]
         }
@@ -208,9 +130,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-09T07:41:24.414Z",
-    "duration": 22031.54,
-    "expected": 3,
+    "startTime": "2025-09-09T11:47:50.964Z",
+    "duration": 10270.864,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

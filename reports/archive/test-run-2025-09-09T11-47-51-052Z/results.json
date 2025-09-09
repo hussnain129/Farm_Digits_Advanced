@@ -1,0 +1,308 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\playwright.config.ts",
+    "rootDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/current/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/current/junit.xml"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/reports/current/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "add-doctor.spec.ts",
+      "file": "add-doctor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Veterinarian Directory",
+          "file": "add-doctor.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a doctor",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11296,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "16:42:53 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:42:55 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-09T11:42:51.358Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-0d5f99d55dea8105c8d2",
+              "file": "add-doctor.spec.ts",
+              "line": 17,
+              "column": 9
+            },
+            {
+              "title": "should filter table results by search term",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 16840,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Ivory\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Ivory\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n\n    at HealthAndVaccinationsPage.expectSearchResults (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts:62:46)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:31:9",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                          "column": 46,
+                          "line": 62
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\Health&Vaccinations.ts:62\n\n\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows)\u001b[33m.\u001b[39mtoHaveCount(expectedCount)\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m         }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoContainText(name)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m     \u001b[36masync\u001b[39m deleteVeterinarian(fullName\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                            "column": 46,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Ivory\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\Health&Vaccinations.ts:62\n\n\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows)\u001b[33m.\u001b[39mtoHaveCount(expectedCount)\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m         }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoContainText(name)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m     \u001b[36masync\u001b[39m deleteVeterinarian(fullName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at HealthAndVaccinationsPage.expectSearchResults (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts:62:46)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:31:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "16:42:53 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:42:55 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        },
+                        {
+                          "text": "16:43:02 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-09T11:42:51.352Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-1a2ae-able-results-by-search-term-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-1a2ae-able-results-by-search-term-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-1a2ae-able-results-by-search-term-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                        "column": 46,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-0ed041d60ada4a09d6a5",
+              "file": "add-doctor.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "should delete searched veterinarian",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 16708,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Ivory\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Ivory\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n\n    at HealthAndVaccinationsPage.expectSearchResults (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts:62:46)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:38:37",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                          "column": 46,
+                          "line": 62
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\Health&Vaccinations.ts:62\n\n\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows)\u001b[33m.\u001b[39mtoHaveCount(expectedCount)\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m         }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoContainText(name)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m     \u001b[36masync\u001b[39m deleteVeterinarian(fullName\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                            "column": 46,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Ivory\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    9 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\Health&Vaccinations.ts:62\n\n\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows)\u001b[33m.\u001b[39mtoHaveCount(expectedCount)\u001b[33m;\u001b[39m\n \u001b[90m 61 |\u001b[39m         }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoContainText(name)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m     }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m     \u001b[36masync\u001b[39m deleteVeterinarian(fullName\u001b[33m:\u001b[39m string) {\u001b[0m\n\u001b[2m    at HealthAndVaccinationsPage.expectSearchResults (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts:62:46)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:38:37\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "16:42:52 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:42:55 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        },
+                        {
+                          "text": "16:43:02 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-09T11:42:51.336Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                        "column": 46,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-befbc25b27e1bab74708",
+              "file": "add-doctor.spec.ts",
+              "line": 34,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-09T11:42:49.229Z",
+    "duration": 21123.246,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

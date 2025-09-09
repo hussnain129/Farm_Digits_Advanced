@@ -1,6 +1,0 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="24.679079">
-<testsuite name="add-doctor.spec.ts" timestamp="2025-09-09T05:42:13.510Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.498" errors="0">
-<testcase name="Add Doctor › should add a doctor" classname="add-doctor.spec.ts" time="14.498">
-</testcase>
-</testsuite>
-</testsuites>

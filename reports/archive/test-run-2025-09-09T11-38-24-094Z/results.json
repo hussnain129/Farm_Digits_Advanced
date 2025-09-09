@@ -70,20 +70,20 @@
   },
   "suites": [
     {
-      "title": "search-doctor.spec.ts",
-      "file": "search-doctor.spec.ts",
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Veterinarian Directory Search",
-          "file": "search-doctor.spec.ts",
-          "line": 5,
+          "title": "SauceDemo Login E2E",
+          "file": "login.spec.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "should filter table results by search term",
+              "title": "should login successfully with standard user",
               "ok": true,
               "tags": [],
               "tests": [
@@ -98,12 +98,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4569,
+                      "duration": 12274,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "16:29:46 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:29:49 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-09T05:48:32.561Z",
+                      "startTime": "2025-09-09T11:29:45.629Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -111,9 +118,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "53ae03ad609a29e09a6f-ff9d7d4476af50cecc00",
-              "file": "search-doctor.spec.ts",
-              "line": 6,
+              "id": "41d3fd2474a19feb00a1-46e3359e5f847af0018c",
+              "file": "login.spec.ts",
+              "line": 8,
               "column": 7
             }
           ]
@@ -123,8 +130,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-09T05:48:25.820Z",
-    "duration": 12498.157000000001,
+    "startTime": "2025-09-09T11:29:43.656Z",
+    "duration": 16170.711000000001,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
