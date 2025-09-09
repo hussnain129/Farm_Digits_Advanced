@@ -31,3 +31,8 @@ export const doctorsData = {
   description: faker.lorem.sentence(),  
 
 };
+
+export const searchData = {
+  name: 'Ivory',
+  expectedCount: 1
+};

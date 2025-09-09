@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.498157">
+<testsuite name="search-doctor.spec.ts" timestamp="2025-09-09T05:48:31.607Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.569" errors="0">
+<testcase name="Veterinarian Directory Search › should filter table results by search term" classname="search-doctor.spec.ts" time="4.569">
+</testcase>
+</testsuite>
+</testsuites>

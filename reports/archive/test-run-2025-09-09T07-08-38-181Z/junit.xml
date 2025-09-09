@@ -1,0 +1,61 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="22.410902">
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-09T07:06:48.333Z" hostname="chromium" tests="3" failures="1" skipped="0" time="30.876" errors="0">
+<testcase name="Veterinarian Directory › should add a doctor" classname="add-doctor.spec.ts" time="9.121">
+</testcase>
+<testcase name="Veterinarian Directory › should filter table results by search term" classname="add-doctor.spec.ts" time="8.84">
+</testcase>
+<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="12.915">
+<failure message="add-doctor.spec.ts:30:9 should delete searched veterinarian" type="FAILURE">
+<![CDATA[  [chromium] › add-doctor.spec.ts:30:9 › Veterinarian Directory › should delete searched veterinarian 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('table tbody tr').filter({ hasText: 'Musa' })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for locator('table tbody tr').filter({ hasText: 'Musa' })
+        4 × locator resolved to 2 elements
+          - unexpected value "2"
+        4 × locator resolved to 1 element
+          - unexpected value "1"
+
+
+       at ..\src\pages\Health&Vaccinations.ts:72
+
+      70 |         await expect(
+      71 |             this.page.locator('table tbody tr', { hasText: fullName })
+    > 72 |         ).toHaveCount(0);
+         |           ^
+      73 |     }
+      74 |
+      75 |
+        at HealthAndVaccinationsPage.deleteVeterinarian (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\Health&Vaccinations.ts:72:11)
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-doctor.spec.ts:35:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

@@ -4,7 +4,7 @@ import { ReportManager } from '../src/utils/report-manager';
 import { LoginPage } from '../src/pages/login-page';
 import { testUsers } from '../src/data/test-data';
 
-const BASE_URL = process.env.BASE_URL || 'https://farmdigits.outscalers.com/login';
+const BASE_URL = process.env.BASE_URL || 'https://farmdigits.outscalers.com';
 
 async function globalSetup(config: FullConfig) {
   const logger = new Logger('GlobalSetup');

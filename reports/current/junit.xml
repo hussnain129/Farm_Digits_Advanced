@@ -1,6 +1,52 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="20.015938000000002">
-<testsuite name="add-shed.spec.ts" timestamp="2025-09-08T12:52:35.277Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.456" errors="0">
-<testcase name="Add Shed › should add a shed" classname="add-shed.spec.ts" time="11.456">
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="22.03154">
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-09T07:41:33.258Z" hostname="chromium" tests="3" failures="0" skipped="0" time="27.414" errors="0">
+<testcase name="Veterinarian Directory › should add a doctor" classname="add-doctor.spec.ts" time="9.032">
+</testcase>
+<testcase name="Veterinarian Directory › should filter table results by search term" classname="add-doctor.spec.ts" time="8.602">
+<system-out>
+<![CDATA[12:41:43 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="9.78">
+<system-out>
+<![CDATA[12:41:43 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+12:41:43 [[32minfo[39m] [CommonUtils]: STEP: getRowByName {
+  "0": "I",
+  "1": "v",
+  "2": "o",
+  "3": "r",
+  "4": "y"
+}
+12:41:43 [[32minfo[39m] [CommonUtils]: STEP: confirmAction {
+  "0": "D",
+  "1": "e",
+  "2": "l",
+  "3": "e",
+  "4": "t",
+  "5": "e"
+}
+12:41:44 [[32minfo[39m] [CommonUtils]: STEP: getRowByName {
+  "0": "I",
+  "1": "v",
+  "2": "o",
+  "3": "r",
+  "4": "y"
+}
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

@@ -98,12 +98,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9032,
+                      "duration": 9115,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-09T07:41:35.216Z",
+                      "startTime": "2025-09-09T07:12:37.265Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -132,16 +132,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 8602,
+                      "duration": 9260,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "12:41:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-09T07:41:35.299Z",
+                      "startTime": "2025-09-09T07:12:37.240Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -170,25 +166,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 9780,
+                      "duration": 10073,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "12:41:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
-                        },
-                        {
-                          "text": "12:41:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: getRowByName {\n  \"0\": \"I\",\n  \"1\": \"v\",\n  \"2\": \"o\",\n  \"3\": \"r\",\n  \"4\": \"y\"\n}\r\n"
-                        },
-                        {
-                          "text": "12:41:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: confirmAction {\n  \"0\": \"D\",\n  \"1\": \"e\",\n  \"2\": \"l\",\n  \"3\": \"e\",\n  \"4\": \"t\",\n  \"5\": \"e\"\n}\r\n"
-                        },
-                        {
-                          "text": "12:41:44 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: getRowByName {\n  \"0\": \"I\",\n  \"1\": \"v\",\n  \"2\": \"o\",\n  \"3\": \"r\",\n  \"4\": \"y\"\n}\r\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-09T07:41:35.223Z",
+                      "startTime": "2025-09-09T07:12:37.232Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -208,8 +191,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-09T07:41:24.414Z",
-    "duration": 22031.54,
+    "startTime": "2025-09-09T07:12:29.066Z",
+    "duration": 19854.862,
     "expected": 3,
     "skipped": 0,
     "unexpected": 0,

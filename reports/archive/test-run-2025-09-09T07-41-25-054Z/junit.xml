@@ -1,0 +1,10 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="19.854862">
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-09T07:12:35.151Z" hostname="chromium" tests="3" failures="0" skipped="0" time="28.448" errors="0">
+<testcase name="Veterinarian Directory › should add a doctor" classname="add-doctor.spec.ts" time="9.115">
+</testcase>
+<testcase name="Veterinarian Directory › should filter table results by search term" classname="add-doctor.spec.ts" time="9.26">
+</testcase>
+<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="10.073">
+</testcase>
+</testsuite>
+</testsuites>
