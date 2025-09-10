@@ -39,7 +39,7 @@ test.describe('Veterinarian Directory', () => {
         await healthAndVaccinations.deleteVeterinarian(searchData.name);
     });
 
-    test.only('should add a vaccine', async ({ page }) => {
+    test('should add a vaccine', async ({ page }) => {
         const sidebarPage = new SidebarPage(page);
         await sidebarPage.clickVaccinesTab();
         const healthAndVaccinations = new HealthAndVaccinationsPage(page);
