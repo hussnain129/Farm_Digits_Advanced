@@ -1,0 +1,11 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="1086.016426">
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-10T05:38:06.544Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1082.699" errors="0">
+<testcase name="Veterinarian Directory › should add a vaccine" classname="add-doctor.spec.ts" time="1082.699">
+<system-out>
+<![CDATA[10:38:09 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+10:38:11 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

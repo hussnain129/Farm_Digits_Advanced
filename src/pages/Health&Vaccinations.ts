@@ -7,11 +7,16 @@ export class HealthAndVaccinationsPage {
 
     // Form Locators
     private addVeterinarianButton = 'button:has-text("Add Veterinarian")';
+    private addVaccineButton = 'button:has-text("Add Vaccine")';
     private nameInput = '#name';
     private addressInput = '#address';
     private phoneInput = '#phone';
     private descriptionInput = '#description';
     private submitDoctorButton = 'button:has-text("Add Doctor")';
+    private vaccineRotation = '#doses';
+    private vaccineRotationSelection = 'div[role="option"]:has-text("4 doses")';
+    private vaccineInterval = '#interval_days';
+    private submitVaccineButton = 'button.bg-blue-600';
 
     // Table & Search
     private searchBox: Locator;
@@ -31,6 +36,10 @@ export class HealthAndVaccinationsPage {
         await this.utils.clickElement(this.addVeterinarianButton);
     }
 
+    async openAddVaccineForm(){
+        await this.utils.clickElement(this.addVaccineButton);
+    }
+
     async fillDoctorForm(name: string, address: string, phone: string, description: string) {
         await this.utils.fillInput(this.nameInput, name);
         await this.utils.fillInput(this.addressInput, address);
@@ -38,14 +47,33 @@ export class HealthAndVaccinationsPage {
         await this.utils.fillInput(this.descriptionInput, description);
     }
 
+    async fillVaccineForm(name: string, interval: number, description: string) {
+        await this.utils.fillInput(this.nameInput, name);
+        await this.utils.clickElement(this.vaccineRotation);
+        await this.utils.clickElement(this.vaccineRotationSelection);
+        await this.utils.fillInput(this.vaccineInterval, interval);
+        await this.utils.fillInput(this.descriptionInput, description);
+    }
+
     async submitDoctorForm() {
         await this.utils.clickElement(this.submitDoctorButton);
+    }
+
+    async submitVaccineForm(){
+        await this.utils.clickElement(this.submitVaccineButton);
+
     }
 
     async openAndSubmitDoctorForm(name: string, address: string, phone: string, description: string) {
         await this.openAddDoctorForm();
         await this.fillDoctorForm(name, address, phone, description);
         await this.submitDoctorForm();
+    }
+
+    async openAndSubmitVaccineForm(name: string, interval: number, description: string) {
+        await this.openAddVaccineForm();
+        await this.fillVaccineForm(name, interval, description);
+        await this.submitVaccineForm();
     }
 
     /** ---------- TABLE ACTIONS ---------- */

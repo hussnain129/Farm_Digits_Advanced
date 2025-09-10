@@ -32,6 +32,13 @@ export const doctorsData = {
 
 };
 
+export const vaccinesData = {
+  name: faker.company.name(),
+  interval: faker.number.int({ min: 1, max: 5 }),           
+  description: faker.lorem.sentence(),  
+
+};
+
 export const searchData = {
   name: 'Dolan',
   expectedCount: 1

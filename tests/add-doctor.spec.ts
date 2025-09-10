@@ -2,7 +2,7 @@ import { test, expect, Page, Locator } from '@playwright/test';
 import { LoginPage } from '../src/pages/login-page';
 import { SidebarPage } from '../src/pages/sidebar-page';
 import { HealthAndVaccinationsPage } from '../src/pages/Health&Vaccinations';
-import { testUsers,doctorsData, searchData } from '../src/data/test-data';
+import { testUsers, doctorsData, searchData, vaccinesData } from '../src/data/test-data';
 
 const BASE_URL = process.env.BASE_URL || 'https://farmdigits.outscalers.com/';
 
@@ -23,7 +23,7 @@ test.describe('Veterinarian Directory', () => {
             doctorsData.description
         );
     });
-  
+
     test('should filter table results by search term', async ({ page }) => {
         const vetDirectory = new HealthAndVaccinationsPage(page);
 
@@ -33,9 +33,18 @@ test.describe('Veterinarian Directory', () => {
 
     test('should delete searched veterinarian', async ({ page }) => {
         const healthAndVaccinations = new HealthAndVaccinationsPage(page);
-      
+
         await healthAndVaccinations.searchVeterinarian(searchData.name);
         await healthAndVaccinations.expectSearchResults(searchData.name);
         await healthAndVaccinations.deleteVeterinarian(searchData.name);
-      });
+    });
+
+    test.only('should add a vaccine', async ({ page }) => {
+        const sidebarPage = new SidebarPage(page);
+        await sidebarPage.clickVaccinesTab();
+        const healthAndVaccinations = new HealthAndVaccinationsPage(page);
+        await healthAndVaccinations.openAndSubmitVaccineForm(vaccinesData.name, vaccinesData.interval, vaccinesData.description);
+        await page.pause();
+
+    });
 });

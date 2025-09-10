@@ -1,0 +1,50 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="21.918763">
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-10T06:57:13.875Z" hostname="chromium" tests="1" failures="1" skipped="0" time="19.111" errors="0">
+<testcase name="Veterinarian Directory › should add a vaccine" classname="add-doctor.spec.ts" time="19.111">
+<failure message="add-doctor.spec.ts:42:10 should add a vaccine" type="FAILURE">
+<![CDATA[  [chromium] › add-doctor.spec.ts:42:10 › Veterinarian Directory › should add a vaccine ────────────
+
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('interval_days') to be visible
+
+
+       at ..\src\utils\common-utils.ts:15
+
+      13 |     this.logger.logElementInteraction('waitForElement', selector);
+      14 |     const element = this.page.locator(selector);
+    > 15 |     await element.waitFor({ state: 'visible', timeout });
+         |                   ^
+      16 |     return element;
+      17 |   }
+      18 |
+        at CommonUtils.waitForElement (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\utils\common-utils.ts:15:19)
+        at CommonUtils.fillInput (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\utils\common-utils.ts:37:32)
+        at HealthAndVaccinationsPage.fillVaccineForm (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\Health&Vaccinations.ts:54:26)
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-doctor.spec.ts:47:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-doctor-Veterinarian-Directory-should-add-a-vaccine-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-doctor-Veterinarian-Directory-should-add-a-vaccine-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\add-doctor-Veterinarian-Directory-should-add-a-vaccine-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[11:57:16 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+11:57:18 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Directory-should-add-a-vaccine-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Directory-should-add-a-vaccine-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Directory-should-add-a-vaccine-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
