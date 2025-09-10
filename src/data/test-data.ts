@@ -40,6 +40,6 @@ export const vaccinesData = {
 };
 
 export const searchData = {
-  name: 'Dolan',
+  name: 'Damon',
   expectedCount: 1
 };

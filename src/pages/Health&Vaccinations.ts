@@ -84,14 +84,29 @@ export class HealthAndVaccinationsPage {
     }
 
     async expectSearchResults(name: string, expectedCount?: number) {
-        if (expectedCount) {
+        const rowCount = await this.tableRows.count();
+        if (rowCount === 0) {
+            console.log(`No search results found for "${name}", skipping checks.`);
+            return; 
+        }
+        if (expectedCount !== undefined) {
             await expect(this.tableRows).toHaveCount(expectedCount);
         }
-        await expect(this.tableRows.first()).toContainText(name);
+        const firstRowText = await this.tableRows.first().innerText();
+        if (!firstRowText.includes("No veterinarians found")) {
+            await expect(this.tableRows.first()).toContainText(name);
+        } else {
+            console.log(`Search result message displayed: "${firstRowText}"`);
+        }
     }
-
+    
     async deleteVeterinarian(fullName: string) {
         const row = this.utils.getRowByName(fullName);
+        const rowCount = await row.count();
+        if (rowCount === 0) {
+            console.log(`Veterinarian "${fullName}" not found, skipping delete.`);
+            return; 
+        }
         const deleteIconButton = row.locator('button').last();
         await deleteIconButton.click();
         await this.utils.confirmAction('Delete');

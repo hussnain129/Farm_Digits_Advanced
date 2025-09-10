@@ -1,40 +1,40 @@
-<testsuites id="" name="" tests="3" failures="2" skipped="0" errors="0" time="21.123245999999998">
-<testsuite name="add-doctor.spec.ts" timestamp="2025-09-09T11:42:49.705Z" hostname="chromium" tests="3" failures="2" skipped="0" time="44.844" errors="0">
-<testcase name="Veterinarian Directory › should add a doctor" classname="add-doctor.spec.ts" time="11.296">
+<testsuites id="" name="" tests="4" failures="2" skipped="0" errors="0" time="44.618370999999996">
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-10T09:13:58.625Z" hostname="chromium" tests="4" failures="2" skipped="0" time="142.513" errors="0">
+<testcase name="Veterinarian Directory › should add a doctor" classname="add-doctor.spec.ts" time="34.205">
 <system-out>
-<![CDATA[16:42:53 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
-16:42:55 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+<![CDATA[14:14:03 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+14:14:07 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
 ]]>
 </system-out>
 </testcase>
-<testcase name="Veterinarian Directory › should filter table results by search term" classname="add-doctor.spec.ts" time="16.84">
+<testcase name="Veterinarian Directory › should filter table results by search term" classname="add-doctor.spec.ts" time="35.928">
 <failure message="add-doctor.spec.ts:27:9 should filter table results by search term" type="FAILURE">
 <![CDATA[  [chromium] › add-doctor.spec.ts:27:9 › Veterinarian Directory › should filter table results by search term 
 
     Error: expect(locator).toContainText(expected) failed
 
     Locator: locator('table tbody tr').first()
-    Expected string: "Ivory"
+    Expected string: "Dolan"
     Received string: "No veterinarians found. Add your first veterinarian to get started."
     Timeout: 5000ms
 
     Call log:
       - Expect "toContainText" with timeout 5000ms
       - waiting for locator('table tbody tr').first()
-        9 × locator resolved to <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">…</tr>
+        8 × locator resolved to <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">…</tr>
           - unexpected value "No veterinarians found. Add your first veterinarian to get started."
 
 
-       at ..\src\pages\Health&Vaccinations.ts:62
+       at ..\src\pages\Health&Vaccinations.ts:97
 
-      60 |             await expect(this.tableRows).toHaveCount(expectedCount);
-      61 |         }
-    > 62 |         await expect(this.tableRows.first()).toContainText(name);
-         |                                              ^
-      63 |     }
-      64 |
-      65 |     async deleteVeterinarian(fullName: string) {
-        at HealthAndVaccinationsPage.expectSearchResults (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\Health&Vaccinations.ts:62:46)
+       95 |             await expect(this.tableRows).toHaveCount(expectedCount);
+       96 |         }
+    >  97 |         await expect(this.tableRows.first()).toContainText(name);
+          |                                              ^
+       98 |     }
+       99 |     
+      100 |     async deleteVeterinarian(fullName: string) {
+        at HealthAndVaccinationsPage.expectSearchResults (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\Health&Vaccinations.ts:97:46)
         at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-doctor.spec.ts:31:9
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
@@ -49,9 +49,9 @@
 ]]>
 </failure>
 <system-out>
-<![CDATA[16:42:53 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
-16:42:55 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
-16:43:02 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+<![CDATA[14:14:02 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+14:14:11 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+14:14:29 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
   "0": "5",
   "1": "0",
   "2": "0",
@@ -67,35 +67,35 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="16.708">
+<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="33.344">
 <failure message="add-doctor.spec.ts:34:9 should delete searched veterinarian" type="FAILURE">
 <![CDATA[  [chromium] › add-doctor.spec.ts:34:9 › Veterinarian Directory › should delete searched veterinarian 
 
     Error: expect(locator).toContainText(expected) failed
 
     Locator: locator('table tbody tr').first()
-    Expected string: "Ivory"
+    Expected string: "Dolan"
     Received string: "No veterinarians found. Add your first veterinarian to get started."
     Timeout: 5000ms
 
     Call log:
       - Expect "toContainText" with timeout 5000ms
       - waiting for locator('table tbody tr').first()
-        9 × locator resolved to <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">…</tr>
+        8 × locator resolved to <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">…</tr>
           - unexpected value "No veterinarians found. Add your first veterinarian to get started."
 
 
-       at ..\src\pages\Health&Vaccinations.ts:62
+       at ..\src\pages\Health&Vaccinations.ts:97
 
-      60 |             await expect(this.tableRows).toHaveCount(expectedCount);
-      61 |         }
-    > 62 |         await expect(this.tableRows.first()).toContainText(name);
-         |                                              ^
-      63 |     }
-      64 |
-      65 |     async deleteVeterinarian(fullName: string) {
-        at HealthAndVaccinationsPage.expectSearchResults (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\Health&Vaccinations.ts:62:46)
-        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-doctor.spec.ts:38:37
+       95 |             await expect(this.tableRows).toHaveCount(expectedCount);
+       96 |         }
+    >  97 |         await expect(this.tableRows.first()).toContainText(name);
+          |                                              ^
+       98 |     }
+       99 |     
+      100 |     async deleteVeterinarian(fullName: string) {
+        at HealthAndVaccinationsPage.expectSearchResults (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\Health&Vaccinations.ts:97:46)
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-doctor.spec.ts:38:9
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\test-failed-1.png
@@ -109,9 +109,15 @@
 ]]>
 </failure>
 <system-out>
-<![CDATA[16:42:52 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
-16:42:55 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
-16:43:02 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+<![CDATA[14:14:03 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+14:14:09 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+14:14:23 [[33mwarn[39m] [CommonUtils]: Click attempt 1 failed, retrying... {
+  "selector": "//span[text()=\"Livestock Management\"]",
+  "error": {
+    "name": "TimeoutError"
+  }
+}
+14:14:28 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
   "0": "5",
   "1": "0",
   "2": "0",
@@ -124,6 +130,13 @@
 [[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\video.webm]]
 
 [[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Veterinarian Directory › should add a vaccine" classname="add-doctor.spec.ts" time="39.036">
+<system-out>
+<![CDATA[14:14:03 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+14:14:08 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
 ]]>
 </system-out>
 </testcase>
