@@ -31,7 +31,7 @@ test.describe('Veterinarian Directory', () => {
         await vetDirectory.expectSearchResults(searchData.name, searchData.expectedCount);
     });
 
-    test.only('should delete searched veterinarian', async ({ page }) => {
+    test('should delete searched veterinarian', async ({ page }) => {
         const healthAndVaccinations = new HealthAndVaccinationsPage(page);
 
         await healthAndVaccinations.searchVeterinarian(searchData.name);
