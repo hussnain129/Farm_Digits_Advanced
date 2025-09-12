@@ -1,25 +1,90 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="19.151153">
-<testsuite name="add-doctor.spec.ts" timestamp="2025-09-10T09:18:26.222Z" hostname="chromium" tests="1" failures="0" skipped="0" time="15.728" errors="0">
-<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="15.728">
+<testsuites id="" name="" tests="8" failures="0" skipped="0" errors="0" time="61.328176">
+<testsuite name="add-animal.spec.ts" timestamp="2025-09-10T11:00:16.521Z" hostname="chromium" tests="1" failures="0" skipped="0" time="32.437" errors="0">
+<testcase name="Add Shed › should add a shed" classname="add-animal.spec.ts" time="32.437">
 <system-out>
-<![CDATA[14:18:28 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
-14:18:31 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
-14:18:42 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+<![CDATA[16:00:22 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:00:25 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-10T11:00:16.521Z" hostname="chromium" tests="4" failures="0" skipped="0" time="106.997" errors="0">
+<testcase name="Veterinarian Directory › should add a doctor" classname="add-doctor.spec.ts" time="24.488">
+<system-out>
+<![CDATA[16:00:22 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:00:26 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+<testcase name="Veterinarian Directory › should filter table results by search term" classname="add-doctor.spec.ts" time="27.424">
+<system-out>
+<![CDATA[16:00:22 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:00:25 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+16:00:39 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
   "0": "5",
   "1": "0",
   "2": "0",
   "3": "m",
   "4": "s"
 }
-ℹ️ Search result message displayed: "No veterinarians found. Add your first veterinarian to get started."
-14:18:43 [[32minfo[39m] [CommonUtils]: STEP: getRowByName {
+Search returned no matches for "Damon"
+]]>
+</system-out>
+</testcase>
+<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="25.65">
+<system-out>
+<![CDATA[16:00:22 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:00:25 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+16:00:38 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+Search returned no matches for "Damon"
+16:00:39 [[32minfo[39m] [CommonUtils]: STEP: getRowByName {
   "0": "D",
-  "1": "o",
-  "2": "l",
-  "3": "a",
+  "1": "a",
+  "2": "m",
+  "3": "o",
   "4": "n"
 }
-Veterinarian "Dolan" not found, skipping delete.
+Veterinarian "Damon" not found, skipping delete.
+]]>
+</system-out>
+</testcase>
+<testcase name="Veterinarian Directory › should add a vaccine" classname="add-doctor.spec.ts" time="29.435">
+<system-out>
+<![CDATA[16:00:45 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:00:47 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="add-shed.spec.ts" timestamp="2025-09-10T11:00:16.521Z" hostname="chromium" tests="1" failures="0" skipped="0" time="30.296" errors="0">
+<testcase name="Add Shed › should add a shed" classname="add-shed.spec.ts" time="30.296">
+<system-out>
+<![CDATA[16:00:46 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:00:49 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="change-logo.spec.ts" timestamp="2025-09-10T11:00:16.521Z" hostname="chromium" tests="1" failures="0" skipped="0" time="26.231" errors="0">
+<testcase name="General Settings › should upload logo and save settings" classname="change-logo.spec.ts" time="26.231">
+<system-out>
+<![CDATA[16:00:48 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:00:52 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.ts" timestamp="2025-09-10T11:00:16.521Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.013" errors="0">
+<testcase name="Farm Digit Login › should login successfully with standard user" classname="login.spec.ts" time="22.013">
+<system-out>
+<![CDATA[16:00:54 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+16:00:58 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
 ]]>
 </system-out>
 </testcase>

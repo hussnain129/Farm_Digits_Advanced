@@ -1,0 +1,590 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\playwright.config.ts",
+    "rootDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/current/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/current/junit.xml"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/reports/current/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "add-animal.spec.ts",
+      "file": "add-animal.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Shed",
+          "file": "add-animal.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a shed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 48627,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:24:57 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:25:08 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        },
+                        {
+                          "text": "15:25:28 [\u001b[33mwarn\u001b[39m] [CommonUtils]: Click attempt 1 failed, retrying... {\n  \"selector\": \"//span[text()=\\\"Livestock Management\\\"]\",\n  \"error\": {\n    \"name\": \"TimeoutError\"\n  }\n}\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T10:24:55.397Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "255a6680a276d410a6ef-4a79890cbd049b44a089",
+              "file": "add-animal.spec.ts",
+              "line": 10,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "add-doctor.spec.ts",
+      "file": "add-doctor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Veterinarian Directory",
+          "file": "add-doctor.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a doctor",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 40158,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:24:57 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:25:07 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T10:24:55.401Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-0d5f99d55dea8105c8d2",
+              "file": "add-doctor.spec.ts",
+              "line": 17,
+              "column": 9
+            },
+            {
+              "title": "should filter table results by search term",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 33724,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:24:57 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:25:05 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        },
+                        {
+                          "text": "15:25:28 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                        },
+                        {
+                          "text": "Search result message displayed: \"No veterinarians found. Add your first veterinarian to get started.\"\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T10:24:55.500Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-0ed041d60ada4a09d6a5",
+              "file": "add-doctor.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "should delete searched veterinarian",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 38476,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Damon\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    3 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"Loading veterinarians...\"\u001b[22m\n\u001b[2m    5 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Damon\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    3 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"Loading veterinarians...\"\u001b[22m\n\u001b[2m    5 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n\n    at HealthAndVaccinationsPage.expectSearchResults (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts:97:50)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:38:9",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                          "column": 50,
+                          "line": 97
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\pages\\Health&Vaccinations.ts:97\n\n\u001b[0m \u001b[90m  95 |\u001b[39m         \u001b[36mconst\u001b[39m firstRowText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n \u001b[90m  96 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mfirstRowText\u001b[33m.\u001b[39mincludes(\u001b[32m\"No veterinarians found\"\u001b[39m)) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  97 |\u001b[39m             \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoContainText(name)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  98 |\u001b[39m         } \u001b[36melse\u001b[39m {\n \u001b[90m  99 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m`Search result message displayed: \"${firstRowText}\"`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                            "column": 50,
+                            "line": 97
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('table tbody tr').first()\nExpected string: \u001b[32m\"Damon\"\u001b[39m\nReceived string: \u001b[31m\"No veterinarians found. Add your first veterinarian to get started.\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('table tbody tr').first()\u001b[22m\n\u001b[2m    3 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"Loading veterinarians...\"\u001b[22m\n\u001b[2m    5 × locator resolved to <tr class=\"border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted\">…</tr>\u001b[22m\n\u001b[2m      - unexpected value \"No veterinarians found. Add your first veterinarian to get started.\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\pages\\Health&Vaccinations.ts:97\n\n\u001b[0m \u001b[90m  95 |\u001b[39m         \u001b[36mconst\u001b[39m firstRowText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n \u001b[90m  96 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mfirstRowText\u001b[33m.\u001b[39mincludes(\u001b[32m\"No veterinarians found\"\u001b[39m)) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  97 |\u001b[39m             \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtableRows\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoContainText(name)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  98 |\u001b[39m         } \u001b[36melse\u001b[39m {\n \u001b[90m  99 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m`Search result message displayed: \"${firstRowText}\"`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m         }\u001b[0m\n\u001b[2m    at HealthAndVaccinationsPage.expectSearchResults (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts:97:50)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-doctor.spec.ts:38:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "15:24:57 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:25:02 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        },
+                        {
+                          "text": "15:25:23 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T10:24:55.440Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\Health&Vaccinations.ts",
+                        "column": 50,
+                        "line": 97
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-befbc25b27e1bab74708",
+              "file": "add-doctor.spec.ts",
+              "line": 34,
+              "column": 9
+            },
+            {
+              "title": "should add a vaccine",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 50566,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:25:30 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:25:41 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        },
+                        {
+                          "text": "15:26:00 [\u001b[33mwarn\u001b[39m] [CommonUtils]: Click attempt 1 failed, retrying... {\n  \"selector\": \"//span[text()=\\\"Livestock Management\\\"]\",\n  \"error\": {\n    \"name\": \"TimeoutError\"\n  }\n}\r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T10:25:29.936Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-2ce3686eb7921e095a2d",
+              "file": "add-doctor.spec.ts",
+              "line": 42,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "add-shed.spec.ts",
+      "file": "add-shed.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Shed",
+          "file": "add-shed.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a shed",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 24138,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email') to be visible\u001b[22m\n\n    at CommonUtils.waitForElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:15:19)\n    at CommonUtils.fillInput (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:37:32)\n    at LoginPage.clickLoginButton (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\login-page.ts:23:22)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-shed.spec.ts:10:9",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                          "column": 19,
+                          "line": 15
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:15\n\n\u001b[0m \u001b[90m 13 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogElementInteraction(\u001b[32m'waitForElement'\u001b[39m\u001b[33m,\u001b[39m selector)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m   }\n \u001b[90m 18 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                            "column": 19,
+                            "line": 15
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#email') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:15\n\n\u001b[0m \u001b[90m 13 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogElementInteraction(\u001b[32m'waitForElement'\u001b[39m\u001b[33m,\u001b[39m selector)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m   }\n \u001b[90m 18 |\u001b[39m\u001b[0m\n\u001b[2m    at CommonUtils.waitForElement (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:15:19)\u001b[22m\n\u001b[2m    at CommonUtils.fillInput (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:37:32)\u001b[22m\n\u001b[2m    at LoginPage.clickLoginButton (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\login-page.ts:23:22)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\add-shed.spec.ts:10:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "15:25:37 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:25:47 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T10:25:36.314Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-shed-Add-Shed-should-add-a-shed-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-shed-Add-Shed-should-add-a-shed-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\add-shed-Add-Shed-should-add-a-shed-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                        "column": 19,
+                        "line": 15
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "21a331257f17531f9ba4-60d46fee37ac2de5c71c",
+              "file": "add-shed.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "change-logo.spec.ts",
+      "file": "change-logo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "General Settings",
+          "file": "change-logo.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should upload logo and save settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30333,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:25:45 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:25:51 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T10:25:44.638Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a72e9a211689064e01c-e5d7192035f98a169593",
+              "file": "change-logo.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Farm Digit Login",
+          "file": "login.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login successfully with standard user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 25094,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "15:25:59 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "15:26:09 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T10:25:54.960Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-92cdc9edc0ea2ad74665",
+              "file": "login.spec.ts",
+              "line": 8,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-10T10:24:52.711Z",
+    "duration": 91058.521,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

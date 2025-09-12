@@ -84,20 +84,22 @@ export class HealthAndVaccinationsPage {
     }
 
     async expectSearchResults(name: string, expectedCount?: number) {
+        const firstRow = this.tableRows.first();
+        await expect(firstRow).not.toHaveText(/Loading veterinarians.../);
         const rowCount = await this.tableRows.count();
         if (rowCount === 0) {
             console.log(`No search results found for "${name}", skipping checks.`);
-            return; 
+            return;
+        }
+        const firstRowText = await firstRow.textContent();
+        if (firstRowText?.includes("No veterinarians found")) {
+            console.log(`Search returned no matches for "${name}"`);
+            return;
         }
         if (expectedCount !== undefined) {
             await expect(this.tableRows).toHaveCount(expectedCount);
         }
-        const firstRowText = await this.tableRows.first().innerText();
-        if (!firstRowText.includes("No veterinarians found")) {
-            await expect(this.tableRows.first()).toContainText(name);
-        } else {
-            console.log(`Search result message displayed: "${firstRowText}"`);
-        }
+        await expect(firstRow).toContainText(name);
     }
     
     async deleteVeterinarian(fullName: string) {

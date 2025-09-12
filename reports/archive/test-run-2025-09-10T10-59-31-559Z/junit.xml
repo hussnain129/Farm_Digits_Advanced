@@ -1,0 +1,27 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="13.381388000000001">
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-10T10:57:31.498Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.049" errors="0">
+<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="10.049">
+<system-out>
+<![CDATA[15:57:33 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:57:36 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+15:57:42 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+Search returned no matches for "Damon"
+15:57:43 [[32minfo[39m] [CommonUtils]: STEP: getRowByName {
+  "0": "D",
+  "1": "a",
+  "2": "m",
+  "3": "o",
+  "4": "n"
+}
+Veterinarian "Damon" not found, skipping delete.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

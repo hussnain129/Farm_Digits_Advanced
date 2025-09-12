@@ -6,7 +6,17 @@
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "report": "playwright show-report",
-    "clean:reports": "powershell -NoProfile -Command \"if (Test-Path reports/current) { Remove-Item reports/current -Recurse -Force }\""
+    "clean:reports": "powershell -NoProfile -Command \"if (Test-Path reports/current) { Remove-Item reports/current -Recurse -Force }\"",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:smoke": "playwright test -g @smoke",
+    "test:regression": "playwright test -g @regression",
+    "test:shard1": "playwright test --shard=1/2",
+    "test:shard2": "playwright test --shard=2/2",
+    "bdd": "cucumber-js",
+    "bdd:tags": "cucumber-js -t \"${TAGS:-@smoke}\"",
+    "bdd:parallel": "cucumber-js --parallel ${WORKERS:-4}",
+    "bdd:report": "echo See reports/current for cucumber JSON/JUnit outputs"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +25,11 @@
   "devDependencies": {
     "@faker-js/faker": "^10.0.0",
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.3.0"
+    "@types/node": "^24.3.0",
+    "dotenv": "^16.4.5",
+    "@cucumber/cucumber": "^10.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "axios": "^1.11.0",

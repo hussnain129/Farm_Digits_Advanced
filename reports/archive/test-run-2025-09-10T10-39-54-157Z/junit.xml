@@ -1,0 +1,66 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="26.149041999999998">
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-10T10:38:11.562Z" hostname="chromium" tests="1" failures="1" skipped="0" time="23.047" errors="0">
+<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="23.047">
+<failure message="add-doctor.spec.ts:34:10 should delete searched veterinarian" type="FAILURE">
+<![CDATA[  [chromium] › add-doctor.spec.ts:34:10 › Veterinarian Directory › should delete searched veterinarian 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('table tbody tr').first()
+    Expected string: "Damon"
+    Received string: "No veterinarians found. Add your first veterinarian to get started."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for locator('table tbody tr').first()
+        3 × locator resolved to <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">…</tr>
+          - unexpected value "Loading veterinarians..."
+        6 × locator resolved to <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">…</tr>
+          - unexpected value "No veterinarians found. Add your first veterinarian to get started."
+
+
+       at ..\src\pages\Health&Vaccinations.ts:103
+
+      101 |     
+      102 |         // Now safely check the name
+    > 103 |         await expect(firstRow).toContainText(name);
+          |                                ^
+      104 |     }
+      105 |     
+      106 |     
+        at HealthAndVaccinationsPage.expectSearchResults (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\Health&Vaccinations.ts:103:32)
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-doctor.spec.ts:38:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[15:38:13 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:38:17 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+15:38:30 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

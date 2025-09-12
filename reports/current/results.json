@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -49,7 +49,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium",
         "name": "chromium",
@@ -70,20 +70,20 @@
   },
   "suites": [
     {
-      "title": "add-doctor.spec.ts",
-      "file": "add-doctor.spec.ts",
+      "title": "add-animal.spec.ts",
+      "file": "add-animal.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Veterinarian Directory",
-          "file": "add-doctor.spec.ts",
+          "title": "Add Shed",
+          "file": "add-animal.spec.ts",
           "line": 9,
           "column": 6,
           "specs": [
             {
-              "title": "should delete searched veterinarian",
+              "title": "should add a shed",
               "ok": true,
               "tags": [],
               "tests": [
@@ -98,31 +98,177 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 15728,
+                      "duration": 32437,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "14:18:28 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                          "text": "16:00:22 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
                         },
                         {
-                          "text": "14:18:31 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
-                        },
-                        {
-                          "text": "14:18:42 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
-                        },
-                        {
-                          "text": "ℹ️ Search result message displayed: \"No veterinarians found. Add your first veterinarian to get started.\"\n"
-                        },
-                        {
-                          "text": "14:18:43 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: getRowByName {\n  \"0\": \"D\",\n  \"1\": \"o\",\n  \"2\": \"l\",\n  \"3\": \"a\",\n  \"4\": \"n\"\n}\r\n"
-                        },
-                        {
-                          "text": "Veterinarian \"Dolan\" not found, skipping delete.\n"
+                          "text": "16:00:25 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-10T09:18:27.688Z",
+                      "startTime": "2025-09-10T11:00:19.442Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "255a6680a276d410a6ef-4a79890cbd049b44a089",
+              "file": "add-animal.spec.ts",
+              "line": 10,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "add-doctor.spec.ts",
+      "file": "add-doctor.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Veterinarian Directory",
+          "file": "add-doctor.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a doctor",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 24488,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "16:00:22 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:00:26 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T11:00:19.348Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-0d5f99d55dea8105c8d2",
+              "file": "add-doctor.spec.ts",
+              "line": 17,
+              "column": 9
+            },
+            {
+              "title": "should filter table results by search term",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 27424,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "16:00:22 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:00:25 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        },
+                        {
+                          "text": "16:00:39 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                        },
+                        {
+                          "text": "Search returned no matches for \"Damon\"\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T11:00:19.345Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-0ed041d60ada4a09d6a5",
+              "file": "add-doctor.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "should delete searched veterinarian",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 25650,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "16:00:22 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:00:25 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        },
+                        {
+                          "text": "16:00:38 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                        },
+                        {
+                          "text": "Search returned no matches for \"Damon\"\n"
+                        },
+                        {
+                          "text": "16:00:39 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: getRowByName {\n  \"0\": \"D\",\n  \"1\": \"a\",\n  \"2\": \"m\",\n  \"3\": \"o\",\n  \"4\": \"n\"\n}\r\n"
+                        },
+                        {
+                          "text": "Veterinarian \"Damon\" not found, skipping delete.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T11:00:19.324Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -133,7 +279,222 @@
               "id": "5952d9ea3e1e5a2c886a-befbc25b27e1bab74708",
               "file": "add-doctor.spec.ts",
               "line": 34,
-              "column": 10
+              "column": 9
+            },
+            {
+              "title": "should add a vaccine",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 29435,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "16:00:45 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:00:47 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T11:00:44.572Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5952d9ea3e1e5a2c886a-2ce3686eb7921e095a2d",
+              "file": "add-doctor.spec.ts",
+              "line": 42,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "add-shed.spec.ts",
+      "file": "add-shed.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Add Shed",
+          "file": "add-shed.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add a shed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 30296,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "16:00:46 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:00:49 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T11:00:45.745Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "21a331257f17531f9ba4-60d46fee37ac2de5c71c",
+              "file": "add-shed.spec.ts",
+              "line": 8,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "change-logo.spec.ts",
+      "file": "change-logo.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "General Settings",
+          "file": "change-logo.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should upload logo and save settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 26231,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "16:00:48 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:00:52 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T11:00:47.553Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3a72e9a211689064e01c-e5d7192035f98a169593",
+              "file": "change-logo.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Farm Digit Login",
+          "file": "login.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login successfully with standard user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22013,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "16:00:54 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "16:00:58 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-10T11:00:52.865Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-92cdc9edc0ea2ad74665",
+              "file": "login.spec.ts",
+              "line": 8,
+              "column": 7
             }
           ]
         }
@@ -142,9 +503,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-10T09:18:25.717Z",
-    "duration": 19151.153000000002,
-    "expected": 1,
+    "startTime": "2025-09-10T11:00:15.965Z",
+    "duration": 61328.176,
+    "expected": 8,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

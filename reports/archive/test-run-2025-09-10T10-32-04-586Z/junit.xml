@@ -1,0 +1,182 @@
+<testsuites id="" name="" tests="8" failures="2" skipped="0" errors="0" time="91.058521">
+<testsuite name="add-animal.spec.ts" timestamp="2025-09-10T10:24:53.301Z" hostname="chromium" tests="1" failures="0" skipped="0" time="48.627" errors="0">
+<testcase name="Add Shed › should add a shed" classname="add-animal.spec.ts" time="48.627">
+<system-out>
+<![CDATA[15:24:57 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:25:08 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+15:25:28 [[33mwarn[39m] [CommonUtils]: Click attempt 1 failed, retrying... {
+  "selector": "//span[text()=\"Livestock Management\"]",
+  "error": {
+    "name": "TimeoutError"
+  }
+}
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="add-doctor.spec.ts" timestamp="2025-09-10T10:24:53.301Z" hostname="chromium" tests="4" failures="1" skipped="0" time="162.924" errors="0">
+<testcase name="Veterinarian Directory › should add a doctor" classname="add-doctor.spec.ts" time="40.158">
+<system-out>
+<![CDATA[15:24:57 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:25:07 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+<testcase name="Veterinarian Directory › should filter table results by search term" classname="add-doctor.spec.ts" time="33.724">
+<system-out>
+<![CDATA[15:24:57 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:25:05 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+15:25:28 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+Search result message displayed: "No veterinarians found. Add your first veterinarian to get started."
+]]>
+</system-out>
+</testcase>
+<testcase name="Veterinarian Directory › should delete searched veterinarian" classname="add-doctor.spec.ts" time="38.476">
+<failure message="add-doctor.spec.ts:34:9 should delete searched veterinarian" type="FAILURE">
+<![CDATA[  [chromium] › add-doctor.spec.ts:34:9 › Veterinarian Directory › should delete searched veterinarian 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('table tbody tr').first()
+    Expected string: "Damon"
+    Received string: "No veterinarians found. Add your first veterinarian to get started."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for locator('table tbody tr').first()
+        3 × locator resolved to <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">…</tr>
+          - unexpected value "Loading veterinarians..."
+        5 × locator resolved to <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">…</tr>
+          - unexpected value "No veterinarians found. Add your first veterinarian to get started."
+
+
+       at ..\src\pages\Health&Vaccinations.ts:97
+
+       95 |         const firstRowText = await this.tableRows.first().innerText();
+       96 |         if (!firstRowText.includes("No veterinarians found")) {
+    >  97 |             await expect(this.tableRows.first()).toContainText(name);
+          |                                                  ^
+       98 |         } else {
+       99 |             console.log(`Search result message displayed: "${firstRowText}"`);
+      100 |         }
+        at HealthAndVaccinationsPage.expectSearchResults (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\Health&Vaccinations.ts:97:50)
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-doctor.spec.ts:38:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[15:24:57 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:25:02 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+15:25:23 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\add-doctor-Veterinarian-Di-4598a-elete-searched-veterinarian-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Veterinarian Directory › should add a vaccine" classname="add-doctor.spec.ts" time="50.566">
+<system-out>
+<![CDATA[15:25:30 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:25:41 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+15:26:00 [[33mwarn[39m] [CommonUtils]: Click attempt 1 failed, retrying... {
+  "selector": "//span[text()=\"Livestock Management\"]",
+  "error": {
+    "name": "TimeoutError"
+  }
+}
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="add-shed.spec.ts" timestamp="2025-09-10T10:24:53.301Z" hostname="chromium" tests="1" failures="1" skipped="0" time="24.138" errors="0">
+<testcase name="Add Shed › should add a shed" classname="add-shed.spec.ts" time="24.138">
+<failure message="add-shed.spec.ts:8:9 should add a shed" type="FAILURE">
+<![CDATA[  [chromium] › add-shed.spec.ts:8:9 › Add Shed › should add a shed ─────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('#email') to be visible
+
+
+       at ..\src\utils\common-utils.ts:15
+
+      13 |     this.logger.logElementInteraction('waitForElement', selector);
+      14 |     const element = this.page.locator(selector);
+    > 15 |     await element.waitFor({ state: 'visible', timeout });
+         |                   ^
+      16 |     return element;
+      17 |   }
+      18 |
+        at CommonUtils.waitForElement (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\utils\common-utils.ts:15:19)
+        at CommonUtils.fillInput (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\utils\common-utils.ts:37:32)
+        at LoginPage.clickLoginButton (C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\src\pages\login-page.ts:23:22)
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\add-shed.spec.ts:10:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\add-shed-Add-Shed-should-add-a-shed-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[15:25:37 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:25:47 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\add-shed-Add-Shed-should-add-a-shed-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="change-logo.spec.ts" timestamp="2025-09-10T10:24:53.301Z" hostname="chromium" tests="1" failures="0" skipped="0" time="30.333" errors="0">
+<testcase name="General Settings › should upload logo and save settings" classname="change-logo.spec.ts" time="30.333">
+<system-out>
+<![CDATA[15:25:45 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:25:51 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.ts" timestamp="2025-09-10T10:24:53.301Z" hostname="chromium" tests="1" failures="0" skipped="0" time="25.094" errors="0">
+<testcase name="Farm Digit Login › should login successfully with standard user" classname="login.spec.ts" time="25.094">
+<system-out>
+<![CDATA[15:25:59 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+15:26:09 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
