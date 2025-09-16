@@ -4,7 +4,7 @@ import { SidebarPage } from '../src/pages/sidebar-page';
 import { HealthAndVaccinationsPage } from '../src/pages/Health&Vaccinations';
 import { testUsers, doctorsData, searchData, vaccinesData } from '../src/data/test-data';
 
-const BASE_URL = process.env.BASE_URL || 'https://farmdigits.outscalers.com/';
+const BASE_URL = 'https://farmdigits.outscalers.com/';
 
 test.describe.parallel('Health&Vaccinations Directory', () => {
     test.beforeEach(async ({ page }) => {
