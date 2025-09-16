@@ -1,0 +1,11 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="21.992682000000002">
+<testsuite name="health-vaccinations.spec.ts" timestamp="2025-09-16T05:36:09.569Z" hostname="chromium" tests="1" failures="0" skipped="0" time="17.627" errors="0">
+<testcase name="Health&amp;Vaccinations Directory › Add Health Record:" classname="health-vaccinations.spec.ts" time="17.627">
+<system-out>
+<![CDATA[10:36:12 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+10:36:17 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

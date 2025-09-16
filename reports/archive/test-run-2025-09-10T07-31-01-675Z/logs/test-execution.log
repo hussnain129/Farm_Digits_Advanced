@@ -1,8 +1,0 @@
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 12:20:27"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 12:20:29"}
-{"context":"CommonUtils","error":{"name":"TimeoutError"},"level":"warn","message":"Click attempt 1 failed, retrying...","selector":"button:has-text(\"Add Vaccine\")","timestamp":"2025-09-10 12:20:40"}
-{"context":"CommonUtils","error":{"name":"TimeoutError"},"level":"warn","message":"Click attempt 2 failed, retrying...","selector":"button:has-text(\"Add Vaccine\")","timestamp":"2025-09-10 12:20:46"}
-{"context":"GlobalTeardown","level":"info","message":"Starting global teardown...","timestamp":"2025-09-10 12:20:53"}
-{"context":"ReportManager","level":"info","message":"Generated test summary report","timestamp":"2025-09-10 12:20:53"}
-{"archivedReports":4,"context":"GlobalTeardown","currentReports":2,"lastArchiveDate":"test-run-2025-09-10T07-20-24-719Z","level":"info","message":"Report statistics:","timestamp":"2025-09-10 12:20:53","totalArchives":10}
-{"context":"GlobalTeardown","level":"info","message":"Global teardown completed successfully","timestamp":"2025-09-10 12:20:53"}

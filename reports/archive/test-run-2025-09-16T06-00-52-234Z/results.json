@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 5
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -49,7 +49,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 5
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -98,19 +98,19 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 36710,
+                      "duration": 7569,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "11:02:20 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                          "text": "10:59:49 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// \r\n"
                         },
                         {
-                          "text": "11:02:23 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                          "text": "10:59:51 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-16T06:02:17.620Z",
+                      "startTime": "2025-09-16T05:59:48.969Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -136,20 +136,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 36644,
+                      "duration": 7806,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "11:02:20 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                          "text": "10:59:57 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// \r\n"
                         },
                         {
-                          "text": "11:02:23 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                          "text": "10:59:59 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
                         },
                         {
-                          "text": "11:02:41 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                          "text": "11:00:03 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
                         },
                         {
                           "text": "Search returned no matches for \"Damon\"\n"
@@ -157,7 +157,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-16T06:02:17.406Z",
+                      "startTime": "2025-09-16T05:59:56.929Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -183,26 +183,26 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 35764,
+                      "duration": 7653,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "11:02:20 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                          "text": "11:00:05 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// \r\n"
                         },
                         {
-                          "text": "11:02:24 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                          "text": "11:00:07 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
                         },
                         {
-                          "text": "11:02:41 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
+                          "text": "11:00:11 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: waitForTableUpdate {\n  \"0\": \"5\",\n  \"1\": \"0\",\n  \"2\": \"0\",\n  \"3\": \"m\",\n  \"4\": \"s\"\n}\r\n"
                         },
                         {
                           "text": "Search returned no matches for \"Damon\"\n"
                         },
                         {
-                          "text": "11:02:42 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: getRowByName {\n  \"0\": \"D\",\n  \"1\": \"a\",\n  \"2\": \"m\",\n  \"3\": \"o\",\n  \"4\": \"n\"\n}\r\n"
+                          "text": "11:00:12 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: getRowByName {\n  \"0\": \"D\",\n  \"1\": \"a\",\n  \"2\": \"m\",\n  \"3\": \"o\",\n  \"4\": \"n\"\n}\r\n"
                         },
                         {
                           "text": "Veterinarian \"Damon\" not found, skipping delete.\n"
@@ -210,7 +210,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-16T06:02:17.448Z",
+                      "startTime": "2025-09-16T06:00:04.788Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -236,22 +236,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 35971,
+                      "duration": 12089,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "11:02:26 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                          "text": "11:00:12 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// \r\n"
                         },
                         {
-                          "text": "11:02:31 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                          "text": "11:00:14 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-16T06:02:17.870Z",
+                      "startTime": "2025-09-16T06:00:12.478Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -277,22 +277,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 37936,
+                      "duration": 10067,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "11:02:20 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                          "text": "11:00:25 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// \r\n"
                         },
                         {
-                          "text": "11:02:23 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                          "text": "11:00:27 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-16T06:02:17.443Z",
+                      "startTime": "2025-09-16T06:00:24.608Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -312,8 +312,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-16T06:02:13.345Z",
-    "duration": 44472.932,
+    "startTime": "2025-09-16T05:59:47.129Z",
+    "duration": 48697.753,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,

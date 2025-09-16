@@ -1,0 +1,17 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="24.818006">
+<testsuite name="health-vaccinations.spec.ts" timestamp="2025-09-16T05:44:55.339Z" hostname="chromium" tests="1" failures="0" skipped="0" time="16.61" errors="0">
+<testcase name="Health&amp;Vaccinations Directory › Add Health Record:" classname="health-vaccinations.spec.ts" time="16.61">
+<system-out>
+<![CDATA[10:44:57 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+10:44:59 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\video.webm]]
+10:45:05 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+10:45:07 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,305 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\playwright.config.ts",
+    "rootDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/current/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/current/junit.xml"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/reports/current/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "health-vaccinations.spec.ts",
+      "file": "health-vaccinations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Health&Vaccinations Directory",
+          "file": "health-vaccinations.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add Health Record:",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8878,
+                      "error": {
+                        "message": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:55:20",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                          "column": 20,
+                          "line": 55
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m         \u001b[36mconst\u001b[39m healthAndVaccinations \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHealthAndVaccinationsPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mawait\u001b[39m healthAndVaccinations\u001b[33m.\u001b[39mopenAddHealthRecordForm()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input#nextCheckup'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'11-12-2025'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpause()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                            "column": 20,
+                            "line": 55
+                          },
+                          "message": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[0m \u001b[90m 53 |\u001b[39m         \u001b[36mconst\u001b[39m healthAndVaccinations \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHealthAndVaccinationsPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mawait\u001b[39m healthAndVaccinations\u001b[33m.\u001b[39mopenAddHealthRecordForm()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input#nextCheckup'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'11-12-2025'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpause()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:55:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "10:32:36 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "10:32:39 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-16T05:32:35.266Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                        "column": 20,
+                        "line": 55
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9104,
+                      "error": {
+                        "message": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:55:20",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                          "column": 20,
+                          "line": 55
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m         \u001b[36mconst\u001b[39m healthAndVaccinations \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHealthAndVaccinationsPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mawait\u001b[39m healthAndVaccinations\u001b[33m.\u001b[39mopenAddHealthRecordForm()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input#nextCheckup'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'11-12-2025'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpause()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                            "column": 20,
+                            "line": 55
+                          },
+                          "message": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[0m \u001b[90m 53 |\u001b[39m         \u001b[36mconst\u001b[39m healthAndVaccinations \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHealthAndVaccinationsPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mawait\u001b[39m healthAndVaccinations\u001b[33m.\u001b[39mopenAddHealthRecordForm()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input#nextCheckup'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'11-12-2025'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpause()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:55:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "10:32:47 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "10:32:50 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-09-16T05:32:47.205Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                        "column": 20,
+                        "line": 55
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8728,
+                      "error": {
+                        "message": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:55:20",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                          "column": 20,
+                          "line": 55
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m         \u001b[36mconst\u001b[39m healthAndVaccinations \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHealthAndVaccinationsPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mawait\u001b[39m healthAndVaccinations\u001b[33m.\u001b[39mopenAddHealthRecordForm()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input#nextCheckup'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'11-12-2025'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpause()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                            "column": 20,
+                            "line": 55
+                          },
+                          "message": "Error: page.fill: Error: Malformed value\nCall log:\n\u001b[2m  - waiting for locator('input#nextCheckup')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"date\" id=\"nextCheckup\" name=\"next_checkup_date\" class=\"flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\"/>\u001b[22m\n\u001b[2m    - fill(\"11-12-2025\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[0m \u001b[90m 53 |\u001b[39m         \u001b[36mconst\u001b[39m healthAndVaccinations \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHealthAndVaccinationsPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mawait\u001b[39m healthAndVaccinations\u001b[33m.\u001b[39mopenAddHealthRecordForm()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 55 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input#nextCheckup'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'11-12-2025'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpause()\u001b[33m;\u001b[39m\n \u001b[90m 57 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 58 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:55:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "10:33:00 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ \r\n"
+                        },
+                        {
+                          "text": "10:33:02 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Waiting for page to load \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-09-16T05:32:59.624Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts",
+                        "column": 20,
+                        "line": 55
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ae40433acd4747e7a5ba-ed774d0d1da06a5cd352",
+              "file": "health-vaccinations.spec.ts",
+              "line": 50,
+              "column": 10
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-16T05:32:33.138Z",
+    "duration": 38272.242,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

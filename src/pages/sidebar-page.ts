@@ -11,6 +11,7 @@ export class SidebarPage {
     private settingsLink = 'button:has-text("Settings")';
     private generalSettingsLink = '//div[@class="text-[13px]" and normalize-space()="General Settings"]';
     private vaccinesTab = 'button[role="tab"]:has-text("Vaccines")';
+    private healthRecordsTab = 'button[role="tab"]:has-text("Health Records")';
     constructor(page: Page) {
         this.page = page;
         this.utils = new CommonUtils(page);
@@ -39,6 +40,9 @@ export class SidebarPage {
     }
     async clickVaccinesTab(){
         await this.utils.clickElement(this.vaccinesTab);
+    }
+    async clickHealthRecordTab(){
+        await this.utils.clickElement(this.healthRecordsTab);
     }
     async openHealthAndVaccinationPage(){
         await this.clickLivestockManagement();

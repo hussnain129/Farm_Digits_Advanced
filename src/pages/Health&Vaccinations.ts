@@ -8,6 +8,7 @@ export class HealthAndVaccinationsPage {
     // Form Locators
     private addVeterinarianButton = 'button:has-text("Add Veterinarian")';
     private addVaccineButton = 'button:has-text("Add Vaccine")';
+    private addHeathRecordButton = 'button:has-text("Add Health Record")';
     private nameInput = '#name';
     private addressInput = '#address';
     private phoneInput = '#phone';
@@ -38,6 +39,10 @@ export class HealthAndVaccinationsPage {
 
     async openAddVaccineForm(){
         await this.utils.clickElement(this.addVaccineButton);
+    }
+
+    async openAddHealthRecordForm(){
+        await this.utils.clickElement(this.addHeathRecordButton);
     }
 
     async fillDoctorForm(name: string, address: string, phone: string, description: string) {

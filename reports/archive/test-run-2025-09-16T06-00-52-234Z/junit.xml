@@ -1,0 +1,63 @@
+<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="48.697753">
+<testsuite name="health-vaccinations.spec.ts" timestamp="2025-09-16T05:59:47.584Z" hostname="chromium" tests="5" failures="0" skipped="0" time="45.184" errors="0">
+<testcase name="Health&amp;Vaccinations Directory › should add a doctor" classname="health-vaccinations.spec.ts" time="7.569">
+<system-out>
+<![CDATA[10:59:49 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// 
+10:59:51 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+<testcase name="Health&amp;Vaccinations Directory › should filter table results by search term" classname="health-vaccinations.spec.ts" time="7.806">
+<system-out>
+<![CDATA[10:59:57 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// 
+10:59:59 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+11:00:03 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+Search returned no matches for "Damon"
+]]>
+</system-out>
+</testcase>
+<testcase name="Health&amp;Vaccinations Directory › should delete searched veterinarian" classname="health-vaccinations.spec.ts" time="7.653">
+<system-out>
+<![CDATA[11:00:05 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// 
+11:00:07 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+11:00:11 [[32minfo[39m] [CommonUtils]: STEP: waitForTableUpdate {
+  "0": "5",
+  "1": "0",
+  "2": "0",
+  "3": "m",
+  "4": "s"
+}
+Search returned no matches for "Damon"
+11:00:12 [[32minfo[39m] [CommonUtils]: STEP: getRowByName {
+  "0": "D",
+  "1": "a",
+  "2": "m",
+  "3": "o",
+  "4": "n"
+}
+Veterinarian "Damon" not found, skipping delete.
+]]>
+</system-out>
+</testcase>
+<testcase name="Health&amp;Vaccinations Directory › should add a vaccine" classname="health-vaccinations.spec.ts" time="12.089">
+<system-out>
+<![CDATA[11:00:12 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// 
+11:00:14 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+<testcase name="Health&amp;Vaccinations Directory › Add Health Record:" classname="health-vaccinations.spec.ts" time="10.067">
+<system-out>
+<![CDATA[11:00:25 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com// 
+11:00:27 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

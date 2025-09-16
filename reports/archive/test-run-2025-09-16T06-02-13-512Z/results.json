@@ -1,0 +1,427 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\playwright.config.ts",
+    "rootDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-setup.ts",
+    "globalTeardown": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\config\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/current/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/current/junit.xml"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/reports/current/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/LENOVO/Desktop/Farm_Digit Automation Testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "health-vaccinations.spec.ts",
+      "file": "health-vaccinations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Health&Vaccinations Directory",
+          "file": "health-vaccinations.spec.ts",
+          "line": 9,
+          "column": 15,
+          "specs": [
+            {
+              "title": "should add a doctor",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1176,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://farmdigits.outscalers.comm/\nCall log:\n\u001b[2m  - navigating to \"https://farmdigits.outscalers.comm/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://farmdigits.outscalers.comm/\nCall log:\n\u001b[2m  - navigating to \"https://farmdigits.outscalers.comm/\", waiting until \"load\"\u001b[22m\n\n    at CommonUtils.navigateTo (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:197:21)\n    at LoginPage.clickLoginButton (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\login-page.ts:21:22)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:12:21",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                          "column": 21,
+                          "line": 197
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:197\n\n\u001b[0m \u001b[90m 195 |\u001b[39m   \u001b[36masync\u001b[39m navigateTo(url\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 196 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogStep(\u001b[32m`Navigating to: ${url}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 197 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 198 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForPageLoad()\u001b[33m;\u001b[39m\n \u001b[90m 199 |\u001b[39m   }\n \u001b[90m 200 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                            "column": 21,
+                            "line": 197
+                          },
+                          "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://farmdigits.outscalers.comm/\nCall log:\n\u001b[2m  - navigating to \"https://farmdigits.outscalers.comm/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:197\n\n\u001b[0m \u001b[90m 195 |\u001b[39m   \u001b[36masync\u001b[39m navigateTo(url\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 196 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogStep(\u001b[32m`Navigating to: ${url}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 197 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 198 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForPageLoad()\u001b[33m;\u001b[39m\n \u001b[90m 199 |\u001b[39m   }\n \u001b[90m 200 |\u001b[39m\u001b[0m\n\u001b[2m    at CommonUtils.navigateTo (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:197:21)\u001b[22m\n\u001b[2m    at LoginPage.clickLoginButton (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\login-page.ts:21:22)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:12:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "11:00:55 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.comm/ \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-16T06:00:54.367Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-cba79-rectory-should-add-a-doctor-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-cba79-rectory-should-add-a-doctor-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-cba79-rectory-should-add-a-doctor-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                        "column": 21,
+                        "line": 197
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1199,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://farmdigits.outscalers.comm/\nCall log:\n\u001b[2m  - navigating to \"https://farmdigits.outscalers.comm/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://farmdigits.outscalers.comm/\nCall log:\n\u001b[2m  - navigating to \"https://farmdigits.outscalers.comm/\", waiting until \"load\"\u001b[22m\n\n    at CommonUtils.navigateTo (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:197:21)\n    at LoginPage.clickLoginButton (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\login-page.ts:21:22)\n    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:12:21",
+                        "location": {
+                          "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                          "column": 21,
+                          "line": 197
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:197\n\n\u001b[0m \u001b[90m 195 |\u001b[39m   \u001b[36masync\u001b[39m navigateTo(url\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 196 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogStep(\u001b[32m`Navigating to: ${url}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 197 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 198 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForPageLoad()\u001b[33m;\u001b[39m\n \u001b[90m 199 |\u001b[39m   }\n \u001b[90m 200 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                            "column": 21,
+                            "line": 197
+                          },
+                          "message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://farmdigits.outscalers.comm/\nCall log:\n\u001b[2m  - navigating to \"https://farmdigits.outscalers.comm/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\common-utils.ts:197\n\n\u001b[0m \u001b[90m 195 |\u001b[39m   \u001b[36masync\u001b[39m navigateTo(url\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 196 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlogger\u001b[33m.\u001b[39mlogStep(\u001b[32m`Navigating to: ${url}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 197 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 198 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForPageLoad()\u001b[33m;\u001b[39m\n \u001b[90m 199 |\u001b[39m   }\n \u001b[90m 200 |\u001b[39m\u001b[0m\n\u001b[2m    at CommonUtils.navigateTo (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts:197:21)\u001b[22m\n\u001b[2m    at LoginPage.clickLoginButton (C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\pages\\login-page.ts:21:22)\u001b[22m\n\u001b[2m    at C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\tests\\health-vaccinations.spec.ts:12:21\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "11:00:59 [\u001b[32minfo\u001b[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.comm/ \r\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-09-16T06:00:58.296Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-cba79-rectory-should-add-a-doctor-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-cba79-rectory-should-add-a-doctor-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-cba79-rectory-should-add-a-doctor-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\reports\\current\\test-results\\health-vaccinations-Health-cba79-rectory-should-add-a-doctor-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\LENOVO\\Desktop\\Farm_Digit Automation Testing\\src\\utils\\common-utils.ts",
+                        "column": 21,
+                        "line": 197
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ae40433acd4747e7a5ba-2af5b1f624e8bc622874",
+              "file": "health-vaccinations.spec.ts",
+              "line": 17,
+              "column": 9
+            },
+            {
+              "title": "should filter table results by search term",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-16T06:00:56.449Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-09-16T06:01:00.236Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ae40433acd4747e7a5ba-dccb5906806ee7051000",
+              "file": "health-vaccinations.spec.ts",
+              "line": 27,
+              "column": 9
+            },
+            {
+              "title": "should delete searched veterinarian",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-16T06:00:56.453Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-09-16T06:01:00.238Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ae40433acd4747e7a5ba-4d5307d8e891a3adc0e9",
+              "file": "health-vaccinations.spec.ts",
+              "line": 34,
+              "column": 9
+            },
+            {
+              "title": "should add a vaccine",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-16T06:00:56.455Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-09-16T06:01:00.240Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ae40433acd4747e7a5ba-9a869fef622f4405fc77",
+              "file": "health-vaccinations.spec.ts",
+              "line": 42,
+              "column": 9
+            },
+            {
+              "title": "Add Health Record:",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-16T06:00:56.457Z",
+                      "annotations": [],
+                      "attachments": []
+                    },
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-09-16T06:01:00.241Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ae40433acd4747e7a5ba-ed774d0d1da06a5cd352",
+              "file": "health-vaccinations.spec.ts",
+              "line": 50,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-16T06:00:52.129Z",
+    "duration": 8734.854,
+    "expected": 0,
+    "skipped": 4,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

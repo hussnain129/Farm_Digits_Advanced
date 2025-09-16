@@ -1,23 +1,17 @@
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 16:00:22"}
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 16:00:22"}
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 16:00:22"}
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 16:00:22"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 16:00:25"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 16:00:25"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 16:00:25"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 16:00:26"}
-{"0":"5","1":"0","2":"0","3":"m","4":"s","context":"CommonUtils","level":"info","message":"STEP: waitForTableUpdate","timestamp":"2025-09-10 16:00:38"}
-{"0":"5","1":"0","2":"0","3":"m","4":"s","context":"CommonUtils","level":"info","message":"STEP: waitForTableUpdate","timestamp":"2025-09-10 16:00:39"}
-{"0":"D","1":"a","2":"m","3":"o","4":"n","context":"CommonUtils","level":"info","message":"STEP: getRowByName","timestamp":"2025-09-10 16:00:39"}
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 16:00:45"}
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 16:00:46"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 16:00:47"}
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 16:00:48"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 16:00:49"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 16:00:52"}
-{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-10 16:00:54"}
-{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-10 16:00:58"}
-{"context":"GlobalTeardown","level":"info","message":"Starting global teardown...","timestamp":"2025-09-10 16:01:16"}
-{"context":"ReportManager","level":"info","message":"Generated test summary report","timestamp":"2025-09-10 16:01:17"}
-{"archivedReports":4,"context":"GlobalTeardown","currentReports":2,"lastArchiveDate":"test-run-2025-09-10T11-00-16-084Z","level":"info","message":"Report statistics:","timestamp":"2025-09-10 16:01:17","totalArchives":10}
-{"context":"GlobalTeardown","level":"info","message":"Global teardown completed successfully","timestamp":"2025-09-10 16:01:17"}
+{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-16 11:02:20"}
+{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-16 11:02:20"}
+{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-16 11:02:20"}
+{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-16 11:02:20"}
+{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-16 11:02:23"}
+{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-16 11:02:23"}
+{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-16 11:02:23"}
+{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-16 11:02:24"}
+{"context":"CommonUtils","level":"info","message":"STEP: Navigating to: https://farmdigits.outscalers.com/","timestamp":"2025-09-16 11:02:26"}
+{"context":"CommonUtils","level":"info","message":"STEP: Waiting for page to load","timestamp":"2025-09-16 11:02:31"}
+{"0":"5","1":"0","2":"0","3":"m","4":"s","context":"CommonUtils","level":"info","message":"STEP: waitForTableUpdate","timestamp":"2025-09-16 11:02:41"}
+{"0":"5","1":"0","2":"0","3":"m","4":"s","context":"CommonUtils","level":"info","message":"STEP: waitForTableUpdate","timestamp":"2025-09-16 11:02:41"}
+{"0":"D","1":"a","2":"m","3":"o","4":"n","context":"CommonUtils","level":"info","message":"STEP: getRowByName","timestamp":"2025-09-16 11:02:42"}
+{"context":"GlobalTeardown","level":"info","message":"Starting global teardown...","timestamp":"2025-09-16 11:02:57"}
+{"context":"ReportManager","level":"info","message":"Generated test summary report","timestamp":"2025-09-16 11:02:57"}
+{"archivedReports":4,"context":"GlobalTeardown","currentReports":2,"lastArchiveDate":"test-run-2025-09-16T06-02-13-512Z","level":"info","message":"Report statistics:","timestamp":"2025-09-16 11:02:57","totalArchives":10}
+{"context":"GlobalTeardown","level":"info","message":"Global teardown completed successfully","timestamp":"2025-09-16 11:02:57"}

@@ -1,0 +1,135 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="38.272242">
+<testsuite name="health-vaccinations.spec.ts" timestamp="2025-09-16T05:32:33.822Z" hostname="chromium" tests="1" failures="1" skipped="0" time="26.71" errors="0">
+<testcase name="Health&amp;Vaccinations Directory › Add Health Record:" classname="health-vaccinations.spec.ts" time="26.71">
+<failure message="health-vaccinations.spec.ts:50:10 Add Health Record:" type="FAILURE">
+<![CDATA[  [chromium] › health-vaccinations.spec.ts:50:10 › Health&Vaccinations Directory › Add Health Record: 
+
+    Error: page.fill: Error: Malformed value
+    Call log:
+      - waiting for locator('input#nextCheckup')
+        - locator resolved to <input type="date" id="nextCheckup" name="next_checkup_date" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"/>
+        - fill("11-12-2025")
+      - attempting fill action
+        - waiting for element to be visible, enabled and editable
+
+
+      53 |         const healthAndVaccinations = new HealthAndVaccinationsPage(page);
+      54 |         await healthAndVaccinations.openAddHealthRecordForm();
+    > 55 |         await page.fill('input#nextCheckup', '11-12-2025');
+         |                    ^
+      56 |         await page.pause();
+      57 |     });
+      58 | });
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\health-vaccinations.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.fill: Error: Malformed value
+    Call log:
+      - waiting for locator('input#nextCheckup')
+        - locator resolved to <input type="date" id="nextCheckup" name="next_checkup_date" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"/>
+        - fill("11-12-2025")
+      - attempting fill action
+        - waiting for element to be visible, enabled and editable
+
+
+      53 |         const healthAndVaccinations = new HealthAndVaccinationsPage(page);
+      54 |         await healthAndVaccinations.openAddHealthRecordForm();
+    > 55 |         await page.fill('input#nextCheckup', '11-12-2025');
+         |                    ^
+      56 |         await page.pause();
+      57 |     });
+      58 | });
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\health-vaccinations.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.fill: Error: Malformed value
+    Call log:
+      - waiting for locator('input#nextCheckup')
+        - locator resolved to <input type="date" id="nextCheckup" name="next_checkup_date" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"/>
+        - fill("11-12-2025")
+      - attempting fill action
+        - waiting for element to be visible, enabled and editable
+
+
+      53 |         const healthAndVaccinations = new HealthAndVaccinationsPage(page);
+      54 |         await healthAndVaccinations.openAddHealthRecordForm();
+    > 55 |         await page.fill('input#nextCheckup', '11-12-2025');
+         |                    ^
+      56 |         await page.pause();
+      57 |     });
+      58 | });
+        at C:\Users\LENOVO\Desktop\Farm_Digit Automation Testing\tests\health-vaccinations.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\reports\current\test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[10:32:36 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+10:32:39 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\video.webm]]
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium\error-context.md]]
+10:32:47 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+10:32:50 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry1\trace.zip]]
+10:33:00 [[32minfo[39m] [CommonUtils]: STEP: Navigating to: https://farmdigits.outscalers.com/ 
+10:33:02 [[32minfo[39m] [CommonUtils]: STEP: Waiting for page to load 
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\video.webm]]
+
+[[ATTACHMENT|test-results\health-vaccinations-Health-edd5a-irectory-Add-Health-Record--chromium-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
